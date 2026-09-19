@@ -1,0 +1,39 @@
+{{ if default true .Site.Params.CarouselHomepage.enable }}
+{{ if isset .Site.Data "carousel" }}
+{{ if gt (len .Site.Data.carousel) 0 }}
+<section>
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="homepage owl-carousel"
+                data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
+                data-slide-speed="{{ default 3000 .Site.Params.CarouselHomepage.slide_speed }}"
+                data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
+                {{ range sort .Site.Data.carousel "weight" }}
+                <div class="item">
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-sm-6 right">
+                            <h1 style="margin-top: 10px; font-weight: 700;">{{ .title | safeHTML }}</h1>
+                            <div style="font-size: 16px; margin: 15px 0;">
+                                {{ .description | safeHTML }}
+                            </div>
+                            {{ if .href }}
+                            <div style="margin-top: 20px;">
+                                <a href="{{ .href | relURL }}" class="btn btn-template-main btn-lg"><i class="fas fa-arrow-right"></i> Learn More</a>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <img class="img-responsive center-block" src="{{ .image | relURL }}" alt="{{ .title }}" style="max-height: 360px; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <!-- /.project owl-slider -->
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
