@@ -1,29 +1,23 @@
 {{ if isset .Site.Params "see_more" }}
 {{ if .Site.Params.see_more.enable }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
-    <div class="dark-mask"></div>
+<section id="see-more">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="icon icon-lg"><i class="{{ .Site.Params.see_more.icon }}"></i>
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="badge-pill-accent" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:20px;">
+                    <i class="{{ .Site.Params.see_more.icon }}"></i> Free Consultation
                 </div>
-                <h3 class="text-uppercase">{{ .Site.Params.see_more.title | markdownify }}</h3>
-                <p class="lead">{{ .Site.Params.see_more.subtitle | markdownify }}</p>
-                <p class="text-center">
-                    {{ with .Site.Params.see_more.link_url }}
-                    <a href="{{ . | relURL }}" class="btn btn-template-transparent-black btn-lg">
-                    {{ end }}
-                        {{ with .Site.Params.see_more.link_text }}
-                        {{ . | markdownify }}
-                        {{ end }}
-                    {{ with .Site.Params.see_more.link_url }}
-                    </a>
-                    {{ end }}
-                </p>
+                <h2 class="see-more-title">{{ .Site.Params.see_more.title | markdownify }}</h2>
+                <p>{{ .Site.Params.see_more.subtitle | markdownify }}</p>
+                {{ with .Site.Params.see_more.link_url }}
+                <a href="{{ . | relURL }}" class="btn btn-lg" style="background:#fff;color:#4f46e5;border:none;padding:14px 36px;font-size:16px;font-weight:700;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.2);display:inline-flex;align-items:center;gap:10px;transition:all .2s;">
+                    {{ with $.Site.Params.see_more.link_text }}{{ . | markdownify }}{{ end }}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                {{ end }}
             </div>
         </div>
     </div>
 </section>
 {{ end }}
 {{ end }}
-

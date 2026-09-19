@@ -73,7 +73,7 @@ params:
   # Top bar
   topbar:
     enable: true
-    text: '<p class="hidden-sm hidden-xs"><i class="fas fa-bullhorn"></i> Elevate Your Learning — Personalized 1-on-1 Tutoring & Mentorship</p>'
+    text: '<p class="hidden-sm hidden-xs"><i class="fas fa-star" style="color:#a5b4fc;"></i>&nbsp; Free initial consultation &nbsp;·&nbsp; 100% Fit Guarantee &nbsp;·&nbsp; Results in 30 days or we re-match for free</p>'
 
   # Homepage widgets
   carouselHomepage:
