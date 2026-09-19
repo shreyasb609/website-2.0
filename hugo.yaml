@@ -1,69 +1,120 @@
-baseURL: https://shreyasb609.github.io/website/
-locale: en-us
-defaultContentLanguage: en
+baseURL: "https://shreyasb609.github.io/website-2.0/"
 title: "Elevate Tutoring | Empowering Academic Success"
-theme: "PaperMod"
-buildFuture: true
+theme: "hugo-universal-theme"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+summaryLength: 70
+pluralizelisttitles: false
 
-pagination:
-  pageSize: 10
+menu:
+  main:
+    - identifier: "menu.home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "menu.about"
+      name: "Purpose & What We Do"
+      url: "/about/"
+      weight: 2
+    - identifier: "menu.get-tutored"
+      name: "Get Tutored"
+      url: "/get-tutored/"
+      weight: 3
+    - identifier: "menu.join"
+      name: "Join as a Tutor"
+      url: "/join/"
+      weight: 4
+    - identifier: "menu.faq"
+      name: "FAQ"
+      url: "/faq/"
+      weight: 5
+    - identifier: "menu.contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 6
 
-outputs:
-  home:
-    - HTML
-    - JSON
-
-sitemap:
-  changefreq: weekly
-  priority: 0.5
-  filename: sitemap.xml
+  topbar:
+    - weight: 1
+      name: "Email"
+      url: "mailto:info@elevatetutoring.com"
+      pre: "<i class='fas fa-envelope'></i>"
+    - weight: 2
+      name: "Get Tutored"
+      url: "/get-tutored/"
+      pre: "<i class='fas fa-graduation-cap'></i>"
 
 params:
-  enableIntegrity: false
-  description: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, test prep, and STEM specialization."
   author: "Elevate Tutoring Team"
-  heroTitleLine1: "Elevate"
-  heroTitleLine2: "Personalized Tutoring & Mentorship"
-  footerText: "© 2026 Elevate Tutoring. All rights reserved."
-  math: false
+  defaultDescription: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, test prep, and STEM mentorship."
+  defaultKeywords: ["tutoring", "STEM", "math", "calculus", "SAT prep", "ACT prep", "AP exams", "coding", "python", "mentorship"]
   
-  # PaperMod / Theme settings
-  defaultTheme: auto
-  disableThemeToggle: false
-  ShowReadingTime: false
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
+  # Style: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+  style: "blue"
 
-  homeInfoParams:
-    Title: "Elevate Your Learning Potential"
-    Content: "Expert 1-on-1 tutoring, test preparation, and academic mentorship tailored to every student's unique goals."
+  disabled_logo: false
+  logo_text: "Elevate"
+  logo: "img/logo.png"
+  logo_small: "img/logo-small.png"
 
-menus:
-  main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: about
-      name: Purpose & What We Do
-      url: /about/
-      weight: 20
-    - identifier: get-tutored
-      name: Get Tutored
-      url: /get-tutored/
-      weight: 30
-    - identifier: join
-      name: Join as a Tutor
-      url: /join/
-      weight: 40
+  contact_url: "/contact/"
+  address: |
+    <p class="text-uppercase"><strong>Elevate Tutoring</strong>
+      <br>Personalized Mentorship & Instruction
+      <br>Online & Local In-Person
+      <br><strong>United States</strong>
+    </p>
+
+  about_us: "<p>Elevate Tutoring connects dedicated students with expert educators for personalized 1-on-1 instruction, test prep, and STEM mentorship.</p>"
+  copyright: "© 2026 Elevate Tutoring. All rights reserved."
+
+  date_format: "January 2, 2006"
+  dropdown_mouse_over: false
+
+  # Top bar
+  topbar:
+    enable: true
+    text: '<p class="hidden-sm hidden-xs"><i class="fas fa-bullhorn"></i> Elevate Your Learning — Personalized 1-on-1 Tutoring & Mentorship</p>'
+
+  # Homepage widgets
+  carouselHomepage:
+    enable: true
+    auto_play: true
+    slide_speed: 3000
+    pagination_speed: 1000
+
+  features:
+    enable: true
+    cols: 3
+
+  testimonials:
+    enable: true
+    title: "What Students & Parents Say"
+    subtitle: "Real stories and score breakthroughs from students and families who trust Elevate."
+
+  see_more:
+    enable: true
+    icon: "fas fa-graduation-cap"
+    title: "Ready to Elevate Your Academic Success?"
+    subtitle: "Get matched with your ideal tutor in under 24 hours. Free initial consultation."
+    link_url: "/get-tutored/"
+    link_text: "Request a Tutor Today"
+
+  clients:
+    enable: false
+
+  recent_posts:
+    enable: false
+
+  footer:
+    recent_posts:
+      enable: false
+
+  enableGoogleMaps: false
+  formspree_action: "https://formspree.io/f/YOUR_FORM_ID"
+  contact_form_ajax: false
+  enableRecaptchaInContactForm: false
 
 markup:
-  tableOfContents:
-    startLevel: 1
-    endLevel: 6
-    ordered: false
   goldmark:
     renderer:
       unsafe: true

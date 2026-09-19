@@ -1,0 +1,10 @@
+weight: 2
+title: "Customized Learning Plans"
+description: >
+  <ul class="list-style-none">
+    <li>Matched by learning style & goals</li>
+    <li>Interactive whiteboards & digital tools</li>
+    <li>Measurable progress tracking</li>
+  </ul>
+image: "img/carousel/template-easy-code.png"
+href: "/about/"
