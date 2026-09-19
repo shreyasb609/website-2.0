@@ -1,50 +1,51 @@
 ---
-title: "Elevate Tutoring | Unlock Your Academic Potential"
+title: "Elevate Tutoring"
 date: 2026-09-18
 draft: false
 ---
 
-<div class="hero-section" style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; border-radius: 12px; margin-bottom: 40px;">
-  <h1 style="font-size: 2.8rem; margin-bottom: 15px; font-weight: 700; color: #ffffff;">Elevate Your Learning Journey</h1>
-  <p style="font-size: 1.25rem; max-width: 750px; margin: 0 auto 30px auto; line-height: 1.6; color: #e0e8f5;">
-    Top-tier 1-on-1 tutoring, specialized STEM instruction, and targeted test preparation tailored to empower every student.
-  </p>
-  <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-    <a href="/get-tutored/" style="background-color: #ff7e5f; color: white; padding: 12px 28px; text-decoration: none; font-weight: bold; border-radius: 30px; transition: transform 0.2s, background-color 0.2s;">Get Tutored Today</a>
-    <a href="/join/" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 28px; text-decoration: none; font-weight: bold; border-radius: 30px; transition: background-color 0.2s;">Join as a Tutor</a>
+<div class="elv-hero">
+  <span class="elv-badge">Personalized Academic Support</span>
+  <h1>Unlock Every Student's Full Potential</h1>
+  <p class="lead">Expert 1-on-1 tutoring, test preparation, and STEM mentorship — designed around each student's goals, pace, and learning style.</p>
+  <div class="elv-cta-group">
+    <a href="/get-tutored/" class="elv-btn elv-btn-primary">Get Tutored</a>
+    <a href="/join/" class="elv-btn elv-btn-outline">Join as a Tutor</a>
   </div>
 </div>
 
-## Why Choose Elevate?
+<div class="elv-section">
+  <p class="elv-section-label">Why Elevate</p>
+  <h2>Built for Real Academic Growth</h2>
+  <p class="sub">We go beyond memorization — our tutors build lasting understanding, confidence, and self-reliance.</p>
 
-At Elevate, we believe every student possesses extraordinary capability when given the right guidance, structure, and encouragement.
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin: 30px 0;">
-
-  <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; background: var(--entry, #ffffff); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-    <h3 style="margin-top: 0; color: #2a5298;">🎯 Personalized Matching</h3>
-    <p>We pair students with top tutors based on learning styles, subject requirements, and goal tracking.</p>
+  <div class="elv-grid">
+    <div class="elv-card">
+      <div class="elv-card-icon">🎯</div>
+      <h3>Personalized Matching</h3>
+      <p>We pair each student with a tutor based on learning style, subject needs, and schedule.</p>
+    </div>
+    <div class="elv-card">
+      <div class="elv-card-icon">🎓</div>
+      <h3>Expert Educators</h3>
+      <p>Our tutors are top university students and credentialed teachers with proven track records.</p>
+    </div>
+    <div class="elv-card">
+      <div class="elv-card-icon">📈</div>
+      <h3>Measurable Results</h3>
+      <p>Progress reports, milestone tracking, and regular check-ins keep students and parents informed.</p>
+    </div>
   </div>
-
-  <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; background: var(--entry, #ffffff); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-    <h3 style="margin-top: 0; color: #2a5298;">🎓 Expert Educators</h3>
-    <p>Our tutors are high-achieving university scholars and experienced teachers dedicated to academic excellence.</p>
-  </div>
-
-  <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; background: var(--entry, #ffffff); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-    <h3 style="margin-top: 0; color: #2a5298;">📈 Measurable Results</h3>
-    <p>Continuous progress reports, practice assessments, and goal milestones to ensure grade and score growth.</p>
-  </div>
-
 </div>
 
----
+<hr class="elv-divider">
 
-## Ready to Elevate Your Grades?
-
-Whether you're looking for help in advanced calculus, AP physics, standardized test prep, or foundational skills, we're here to help.
-
-- 👉 **[Explore Our Purpose & Services](/about/)**
-- 👉 **[Find a Tutor for Your Child](/get-tutored/)**
-- 👉 **[Apply to Teach with Us](/join/)**
-
+<div class="elv-section">
+  <p class="elv-section-label">Get Started</p>
+  <h2>Ready to Elevate Your Grades?</h2>
+  <p>Whether you need help in AP Calculus, SAT prep, Python, or essay writing — we have the right tutor for you.</p>
+  <div class="elv-cta-group">
+    <a href="/about/" class="elv-btn elv-btn-outline">Learn About Us</a>
+    <a href="/get-tutored/" class="elv-btn elv-btn-primary">Find a Tutor →</a>
+  </div>
+</div>

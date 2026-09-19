@@ -1,90 +1,96 @@
 ---
 title: "Get Tutored"
-description: "Sign up for personalized 1-on-1 tutoring sessions with Elevate."
+description: "Request a personalized tutor from Elevate. We respond within 24 hours."
 date: 2026-09-18
 draft: false
 ---
 
-# Start Your Learning Journey Today
+<p class="elv-lead">Getting matched with an Elevate tutor is fast and free to start. Fill out the form below and we'll follow up within <strong>24 hours</strong> to arrange a free introductory consultation.</p>
 
-Getting matched with an expert tutor at Elevate is fast and easy. Fill out the request form below, and our team will get back to you within **24 hours** to arrange a free initial consultation.
+## Available Subject Tracks
 
----
-
-## Select Your Academic Track
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 30px;">
-  <div style="border: 1px solid #cbd5e1; padding: 16px; border-radius: 8px;">
-    <strong>📐 K-12 Math & Science</strong>
-    <p style="font-size: 0.9rem; margin-top: 8px;">Foundational concepts through advanced STEM subjects.</p>
+<div class="elv-grid">
+  <div class="elv-card">
+    <div class="elv-card-icon">📐</div>
+    <h3>K–12 Math & Science</h3>
+    <p>Foundational concepts through advanced STEM subjects, including AP courses.</p>
   </div>
-  <div style="border: 1px solid #cbd5e1; padding: 16px; border-radius: 8px;">
-    <strong>🏆 AP & Test Prep</strong>
-    <p style="font-size: 0.9rem; margin-top: 8px;">SAT/ACT prep and targeted AP exam coaching.</p>
+  <div class="elv-card">
+    <div class="elv-card-icon">🏆</div>
+    <h3>Test Prep</h3>
+    <p>SAT, ACT, AP exams, and selective school admissions testing (SSAT/ISEE).</p>
   </div>
-  <div style="border: 1px solid #cbd5e1; padding: 16px; border-radius: 8px;">
-    <strong>💻 College & Coding</strong>
-    <p style="font-size: 0.9rem; margin-top: 8px;">University-level computer science, data science, and math.</p>
+  <div class="elv-card">
+    <div class="elv-card-icon">💻</div>
+    <h3>College & Coding</h3>
+    <p>University-level CS, data science, math, and intro programming courses.</p>
   </div>
 </div>
 
----
+<hr class="elv-divider">
 
-## Student Intake & Tutor Request Form
+## Request a Tutor
 
-<form action="#" method="POST" style="background: var(--entry, #f8fafc); padding: 25px; border-radius: 10px; border: 1px solid #e2e8f0; max-width: 650px; margin: 20px auto;">
-  
-  <div style="margin-bottom: 16px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Student Name</label>
-    <input type="text" placeholder="e.g. Alex Smith" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
+<form class="elv-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+  <div class="elv-form-group">
+    <label for="student-name">Student Name</label>
+    <input id="student-name" type="text" name="student_name" placeholder="e.g. Alex Smith" required>
   </div>
 
-  <div style="margin-bottom: 16px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Parent / Contact Email</label>
-    <input type="email" placeholder="alex.smith@example.com" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
+  <div class="elv-form-group">
+    <label for="contact-email">Parent / Contact Email</label>
+    <input id="contact-email" type="email" name="email" placeholder="alex@example.com" required>
   </div>
 
-  <div style="margin-bottom: 16px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Grade Level / Academic Year</label>
-    <select style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
-      <option>Middle School (Grades 6-8)</option>
-      <option>High School (Grades 9-12)</option>
+  <div class="elv-form-group">
+    <label for="grade-level">Grade Level</label>
+    <select id="grade-level" name="grade_level">
+      <option>Middle School (Grades 6–8)</option>
+      <option>High School (Grades 9–12)</option>
       <option>College / University</option>
       <option>Adult Learner</option>
     </select>
   </div>
 
-  <div style="margin-bottom: 16px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Subject(s) Needed</label>
-    <input type="text" placeholder="e.g. AP Calculus BC, SAT Physics, Python" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
+  <div class="elv-form-group">
+    <label for="subjects">Subject(s) Needed</label>
+    <input id="subjects" type="text" name="subjects" placeholder="e.g. AP Calculus BC, SAT Math, Python" required>
   </div>
 
-  <div style="margin-bottom: 16px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Preferred Format & Hours</label>
-    <select style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
-      <option>Online (1-2 hrs / week)</option>
-      <option>Online (3+ hrs / week intensive)</option>
+  <div class="elv-form-group">
+    <label for="format">Preferred Format</label>
+    <select id="format" name="format">
+      <option>Online — 1–2 hrs / week</option>
+      <option>Online — 3+ hrs / week (intensive)</option>
       <option>In-Person (Local)</option>
     </select>
   </div>
 
-  <div style="margin-bottom: 20px;">
-    <label style="display: block; font-weight: 600; margin-bottom: 6px;">Goals & Additional Notes</label>
-    <textarea rows="4" placeholder="Tell us about your learning goals or specific areas of difficulty..." style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;"></textarea>
+  <div class="elv-form-group">
+    <label for="notes">Goals & Additional Notes</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your goals or any areas of difficulty..."></textarea>
   </div>
 
-  <button type="submit" style="background: #2a5298; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1rem;">
-    Submit Tutor Request
-  </button>
+  <button type="submit" class="elv-form-submit">Submit Tutor Request</button>
+  <p class="elv-form-notice">We'll respond within 24 hours. No commitment required.</p>
 </form>
 
----
+<hr class="elv-divider">
 
 ## Frequently Asked Questions
 
-**Q: Where do tutoring sessions take place?**  
-A: We offer interactive online tutoring via high-definition video calls with collaborative digital whiteboards, as well as select in-person tutoring based on location.
-
-**Q: What if the tutor match isn't the right fit?**  
-A: We offer a **100% Fit Guarantee**. If you feel your assigned tutor is not a perfect match after your first session, we will pair you with a new tutor at no extra charge.
-
+<div class="elv-faq">
+  <div class="elv-faq-item">
+    <p class="elv-faq-q">Where do sessions take place?</p>
+    <p class="elv-faq-a">Online sessions use high-quality video call platforms with shared digital whiteboards. In-person options are available in select locations.</p>
+  </div>
+  <div class="elv-faq-item">
+    <p class="elv-faq-q">What if the tutor isn't the right fit?</p>
+    <p class="elv-faq-a">We offer a 100% Fit Guarantee. If your first session doesn't feel right, we'll rematch you — at no extra charge.</p>
+  </div>
+  <div class="elv-faq-item">
+    <p class="elv-faq-q">How is pricing structured?</p>
+    <p class="elv-faq-a">Rates vary by subject and tutor experience. We'll share a clear pricing breakdown during your free consultation.</p>
+  </div>
+</div>

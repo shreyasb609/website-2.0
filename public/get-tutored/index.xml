@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Get Tutored on Elevate Tutoring | Empowering Academic Success</title>
-    <link>http://localhost:1313/website/get-tutored/</link>
-    <description>Recent content in Get Tutored on Elevate Tutoring | Empowering Academic Success</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/website/get-tutored/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Get Tutored on Elevate Tutoring | Empowering Academic Success</title><link>https://shreyasb609.github.io/website/get-tutored/</link><description>Recent content in Get Tutored on Elevate Tutoring | Empowering Academic Success</description><generator>Hugo</generator><language>en-us</language><lastBuildDate/><atom:link href="https://shreyasb609.github.io/website/get-tutored/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

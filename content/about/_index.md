@@ -1,58 +1,81 @@
 ---
 title: "Purpose & What We Do"
-description: "Discover Elevate's mission, teaching philosophy, and comprehensive tutoring programs."
+description: "Elevate's mission, services, and step-by-step approach to academic success."
 date: 2026-09-18
 draft: false
 ---
 
-# Our Mission & Purpose
+<p class="elv-lead">At <strong>Elevate Tutoring</strong>, our mission is to close educational gaps, spark genuine curiosity, and equip students with lifelong problem-solving skills — far beyond what rote memorization ever could.</p>
 
-At **Elevate Tutoring**, our mission is simple yet transformative: **to close educational gaps, foster genuine curiosity, and empower students with lifelong problem-solving skills.**
+<hr class="elv-divider">
 
-We go beyond standard memorization and test prep. We focus on building deep conceptual understanding, self-reliance, and academic confidence.
+## What We Offer
 
----
+<div class="elv-grid">
+  <div class="elv-card">
+    <div class="elv-card-icon">📐</div>
+    <h3>K–12 Math & Science</h3>
+    <p>Pre-Algebra through Calculus BC, Biology, Chemistry, Physics, and AP courses.</p>
+  </div>
+  <div class="elv-card">
+    <div class="elv-card-icon">📝</div>
+    <h3>Test Preparation</h3>
+    <p>SAT, ACT, AP Exams, SSAT/ISEE — strategy-first, score-focused coaching.</p>
+  </div>
+  <div class="elv-card">
+    <div class="elv-card-icon">💻</div>
+    <h3>STEM & Coding</h3>
+    <p>Python, Java, Data Science, and Robotics for students pursuing tech careers.</p>
+  </div>
+  <div class="elv-card">
+    <div class="elv-card-icon">✍️</div>
+    <h3>Humanities & Writing</h3>
+    <p>English Literature, Academic Writing, History, and Foreign Languages.</p>
+  </div>
+  <div class="elv-card">
+    <div class="elv-card-icon">🧠</div>
+    <h3>Executive Function</h3>
+    <p>Time management, study skills, organization, and reducing academic anxiety.</p>
+  </div>
+  <div class="elv-card">
+    <div class="elv-card-icon">🎓</div>
+    <h3>College-Level Support</h3>
+    <p>University STEM, CS, and math coursework for undergraduate students.</p>
+  </div>
+</div>
 
-## What We Do
-
-Elevate offers comprehensive tutoring solutions tailored to K-12 students, AP candidates, and university undergraduates across a wide range of academic disciplines.
-
-### 1. One-on-One Customized Tutoring
-Every student learns differently. We design individualized lesson plans that align with the student's school curriculum and personal learning speed.
-
-- **Mathematics**: Pre-Algebra, Algebra I & II, Geometry, Pre-Calculus, Calculus AB/BC, Statistics.
-- **Sciences**: Biology, Chemistry, Physics, Computer Science & Data Structures.
-- **Humanities**: English Literature, Academic Writing, History, Foreign Languages.
-
-### 2. Standardized Test Preparation
-Boost scores with proven strategies, timed practice drills, and weak-point analysis.
-- **SAT & ACT Prep**
-- **AP Exams & Honors Courses**
-- **SSAT / ISEE Admissions Testing**
-
-### 3. STEM Specialization & Coding
-Interactive instruction in Python, Java, Data Science, and Robotics for students seeking an edge in modern tech fields.
-
-### 4. Executive Function & Study Skills Mentorship
-Help students organize assignments, master time management, reduce academic anxiety, and build efficient study habits.
-
----
+<hr class="elv-divider">
 
 ## Our 4-Step Process
 
-```
-[1. Initial Consultation] ➔ [2. Custom Tutor Match] ➔ [3. Targeted Learning Sessions] ➔ [4. Regular Progress Tracking]
-```
+<ol class="elv-steps">
+  <li>
+    <div>
+      <strong>Initial Assessment</strong><br>
+      We evaluate the student's current level, goals, schedule, and learning preferences.
+    </div>
+  </li>
+  <li>
+    <div>
+      <strong>Personalized Tutor Match</strong><br>
+      We connect the student with a tutor whose expertise and style are the right fit.
+    </div>
+  </li>
+  <li>
+    <div>
+      <strong>Targeted Sessions</strong><br>
+      Structured, engaging lessons built around concept mastery and guided problem-solving.
+    </div>
+  </li>
+  <li>
+    <div>
+      <strong>Progress Tracking</strong><br>
+      Regular session reports and milestone check-ins keep everyone aligned on growth.
+    </div>
+  </li>
+</ol>
 
-1. **Initial Assessment**: We evaluate current performance, learning goals, and schedule requirements.
-2. **Personalized Matching**: We pair the student with a mentor whose background and teaching style suit them best.
-3. **Interactive Instruction**: Sessions combine concept clarity, guided problem solving, and practice.
-4. **Transparent Feedback**: Parents and students receive detailed session reports and milestone updates.
-
----
-
-<div style="margin-top: 30px; text-align: center; padding: 20px; background-color: rgba(42, 82, 152, 0.08); border-radius: 8px;">
-  <h3>Have questions or ready to get started?</h3>
-  <p><a href="/get-tutored/" style="color: #1e3c72; font-weight: bold; text-decoration: underline;">Schedule a Consultation / Request a Tutor →</a></p>
+<div class="elv-callout">
+  <h3>Ready to get started?</h3>
+  <p>Schedule a free initial consultation — no commitment required. <a href="/get-tutored/">Request a tutor →</a></p>
 </div>
-
