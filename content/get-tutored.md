@@ -102,15 +102,15 @@ type: "page"
 <p style="font-size:13.5px;margin:0;">Begin personalized instruction — fully customized to your pace and goals.</p>
 </div>
 </div>
-<div style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:22px 20px;">
-<div style="font-weight:700;color:#3730a3;margin-bottom:8px;">
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:22px 20px;">
+<div style="font-weight:700;color:#1e3a8a;margin-bottom:8px;">
 <i class="fas fa-shield-alt"></i> 100% Fit Guarantee
 </div>
 <p style="font-size:13.5px;color:#4338ca;margin:0;line-height:1.65;">If you're not happy with your first tutor, we'll rematch you for free and credit your session.</p>
 </div>
 <div style="margin-top:20px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:20px;">
 <div style="font-size:13px;font-weight:700;color:#374151;margin-bottom:6px;">
-<i class="fas fa-video" style="color:#4f46e5;"></i> Online sessions include:
+<i class="fas fa-video" style="color:#1e40af;"></i> Online sessions include:
 </div>
 <ul style="padding-left:18px;margin:0;font-size:13px;color:#6b7280;line-height:2;">
 <li>HD video call with shared whiteboard</li>
@@ -123,3 +123,5 @@ type: "page"
 </div>
 </div>
 </div>
+
+
