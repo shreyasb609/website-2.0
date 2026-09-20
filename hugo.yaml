@@ -96,7 +96,7 @@ params:
     icon: "fas fa-graduation-cap"
     title: "Ready to Elevate Your Academic Success?"
     subtitle: "Get matched with your ideal tutor in under 24 hours. Free initial consultation."
-    link_url: "/get-tutored/"
+    link_url: "get-tutored/"
     link_text: "Request a Tutor Today"
 
   clients:
