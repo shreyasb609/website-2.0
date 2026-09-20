@@ -24,19 +24,19 @@ type: "page"
 </div>
 <div class="col-md-6 col-md-offset-1">
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-<div style="background:#f8f9ff; border:1px solid #e5e7eb; border-radius:12px; padding:28px 24px; text-align:center;">
+<div style="background:#F3F1EC; border:1px solid #EAE4D9; border-radius:12px; padding:28px 24px; text-align:center;">
 <span class="stat-number">500+</span>
 <span class="stat-label">Students Served</span>
 </div>
-<div style="background:#f8f9ff; border:1px solid #e5e7eb; border-radius:12px; padding:28px 24px; text-align:center;">
+<div style="background:#F3F1EC; border:1px solid #EAE4D9; border-radius:12px; padding:28px 24px; text-align:center;">
 <span class="stat-number">95%</span>
 <span class="stat-label">Grade Improvement Rate</span>
 </div>
-<div style="background:#f8f9ff; border:1px solid #e5e7eb; border-radius:12px; padding:28px 24px; text-align:center;">
+<div style="background:#F3F1EC; border:1px solid #EAE4D9; border-radius:12px; padding:28px 24px; text-align:center;">
 <span class="stat-number">24h</span>
 <span class="stat-label">Average Match Time</span>
 </div>
-<div style="background:#f8f9ff; border:1px solid #e5e7eb; border-radius:12px; padding:28px 24px; text-align:center;">
+<div style="background:#F3F1EC; border:1px solid #EAE4D9; border-radius:12px; padding:28px 24px; text-align:center;">
 <span class="stat-number">4.9&#9733;</span>
 <span class="stat-label">Average Rating</span>
 </div>
@@ -147,5 +147,7 @@ type: "page"
 
 </div>
 </div>
+
+
 
 

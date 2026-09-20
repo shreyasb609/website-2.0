@@ -112,13 +112,13 @@ Absolutely. We understand that the tutor-student relationship is key to success.
 
 </div>
 
-<div class="text-center" style="margin-top:56px;padding:40px 32px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:12px;">
+<div class="text-center" style="margin-top:56px;padding:40px 32px;background:#f9fafb;border:1px solid #EAE4D9;border-radius:12px;">
 <h4 style="margin-bottom:10px;">Still have questions?</h4>
 <p style="margin-bottom:24px;">Our team is happy to help — reach out and we'll respond within one business day.</p>
 <a href="/website-2.0/contact/" class="btn btn-template-main btn-lg" style="margin-right:12px;">
 <i class="fas fa-envelope"></i> Contact Our Team
 </a>
-<a href="/website-2.0/get-tutored/" class="btn btn-lg" style="background:#f3f4f6;color:#374151;border:1px solid #e5e7eb;">
+<a href="/website-2.0/get-tutored/" class="btn btn-lg" style="background:#F3F1EC;color:#44403C;border:1px solid #EAE4D9;">
 Request a Tutor
 </a>
 </div>
@@ -128,5 +128,6 @@ Request a Tutor
 
 </div>
 </div>
+
 
 

@@ -71,7 +71,7 @@ type: "page"
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-paper-plane"></i> Submit Tutor Request
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#9ca3af;">
+<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">
 <i class="fas fa-lock" style="font-size:11px;"></i> No commitment required. We respect your privacy.
 </p>
 </div>
@@ -84,35 +84,35 @@ type: "page"
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">1</div>
 <div>
-<strong style="display:block;font-size:14px;color:#111827;margin-bottom:4px;">We review your request</strong>
+<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">We review your request</strong>
 <p style="font-size:13.5px;margin:0;">Our team reviews your goals and identifies top-matched tutors within hours.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">2</div>
 <div>
-<strong style="display:block;font-size:14px;color:#111827;margin-bottom:4px;">Free consultation call</strong>
+<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Free consultation call</strong>
 <p style="font-size:13.5px;margin:0;">We schedule a free 20-minute intro call with your matched tutor.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:40px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">3</div>
 <div>
-<strong style="display:block;font-size:14px;color:#111827;margin-bottom:4px;">Start your first session</strong>
+<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Start your first session</strong>
 <p style="font-size:13.5px;margin:0;">Begin personalized instruction — fully customized to your pace and goals.</p>
 </div>
 </div>
 <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:22px 20px;">
-<div style="font-weight:700;color:#1e3a8a;margin-bottom:8px;">
+<div style="font-weight:700;color:#14532D;margin-bottom:8px;">
 <i class="fas fa-shield-alt"></i> 100% Fit Guarantee
 </div>
-<p style="font-size:13.5px;color:#4338ca;margin:0;line-height:1.65;">If you're not happy with your first tutor, we'll rematch you for free and credit your session.</p>
+<p style="font-size:13.5px;color:#15803D;margin:0;line-height:1.65;">If you're not happy with your first tutor, we'll rematch you for free and credit your session.</p>
 </div>
-<div style="margin-top:20px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:20px;">
-<div style="font-size:13px;font-weight:700;color:#374151;margin-bottom:6px;">
-<i class="fas fa-video" style="color:#1e40af;"></i> Online sessions include:
+<div style="margin-top:20px;background:#f9fafb;border:1px solid #EAE4D9;border-radius:10px;padding:20px;">
+<div style="font-size:13px;font-weight:700;color:#44403C;margin-bottom:6px;">
+<i class="fas fa-video" style="color:#15803D;"></i> Online sessions include:
 </div>
-<ul style="padding-left:18px;margin:0;font-size:13px;color:#6b7280;line-height:2;">
+<ul style="padding-left:18px;margin:0;font-size:13px;color:#78716C;line-height:2;">
 <li>HD video call with shared whiteboard</li>
 <li>Real-time screen sharing</li>
 <li>Recorded lesson archives</li>
@@ -123,5 +123,6 @@ type: "page"
 </div>
 </div>
 </div>
+
 
 

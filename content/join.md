@@ -92,7 +92,7 @@ type: "page"
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-user-plus"></i> Submit Application
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#9ca3af;">We review all applications carefully and respond within 2–3 business days.</p>
+<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">We review all applications carefully and respond within 2–3 business days.</p>
 </div>
 </form>
 </div>
@@ -102,27 +102,27 @@ type: "page"
 <h4 style="margin-bottom:20px;">Who we're looking for</h4>
 <ul style="list-style:none;padding:0;margin:0 0 32px;">
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
-<i class="fas fa-check-circle" style="color:#1e40af;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#374151;line-height:1.6;">Strong academic background (GPA 3.5+) or equivalent expertise</span>
+<i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
+<span style="font-size:14px;color:#44403C;line-height:1.6;">Strong academic background (GPA 3.5+) or equivalent expertise</span>
 </li>
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
-<i class="fas fa-check-circle" style="color:#1e40af;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#374151;line-height:1.6;">University students, recent graduates, or credentialed teachers</span>
+<i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
+<span style="font-size:14px;color:#44403C;line-height:1.6;">University students, recent graduates, or credentialed teachers</span>
 </li>
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
-<i class="fas fa-check-circle" style="color:#1e40af;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#374151;line-height:1.6;">Patience, reliability, and a genuine passion for helping others</span>
+<i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
+<span style="font-size:14px;color:#44403C;line-height:1.6;">Patience, reliability, and a genuine passion for helping others</span>
 </li>
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;">
-<i class="fas fa-check-circle" style="color:#1e40af;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#374151;line-height:1.6;">Availability for at least 5 hours per week</span>
+<i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
+<span style="font-size:14px;color:#44403C;line-height:1.6;">Availability for at least 5 hours per week</span>
 </li>
 </ul>
 <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:22px 20px;">
-<div style="font-weight:700;color:#1e3a8a;margin-bottom:8px;font-size:14px;">
+<div style="font-weight:700;color:#14532D;margin-bottom:8px;font-size:14px;">
 <i class="fas fa-star"></i> Tutor Benefits
 </div>
-<ul style="padding-left:18px;margin:0;font-size:13px;color:#4338ca;line-height:2;">
+<ul style="padding-left:18px;margin:0;font-size:13px;color:#15803D;line-height:2;">
 <li>Competitive hourly compensation</li>
 <li>Flexible, remote-first sessions</li>
 <li>Dedicated support &amp; training</li>
@@ -135,5 +135,6 @@ type: "page"
 
 </div>
 </div>
+
 
 
