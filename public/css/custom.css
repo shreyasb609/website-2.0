@@ -504,7 +504,7 @@ hr {
 }
 #footer .footer-cta-btn:hover { background: var(--clr-cta-dk); transform: none; }
 #copyright { background: #0F3F22; padding: 20px 0; }
-#copyright p { color: #9CA3AF; font-size: 14px; margin: 0; }
+#copyright p { color: #D1D5DB; font-size: 14px; margin: 0; }
 
 /* -- Utility Classes ----------------------------------------- */
 .text-accent { color: var(--clr-accent) !important; }
@@ -560,3 +560,4 @@ hr {
   .home-carousel, #top, #footer, #copyright { display: none; }
   body { font-size: 12pt; background: #fff; }
 }
+

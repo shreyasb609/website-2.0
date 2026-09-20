@@ -10,7 +10,7 @@
                 <h2 class="see-more-title">{{ .Site.Params.see_more.title | markdownify }}</h2>
                 <p>{{ .Site.Params.see_more.subtitle | markdownify }}</p>
                 {{ with .Site.Params.see_more.link_url }}
-                <a href="{{ . | relURL }}" class="btn btn-lg" style="background:#fff;color:#1e40af;border:none;padding:14px 36px;font-size:16px;font-weight:700;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.2);display:inline-flex;align-items:center;gap:10px;transition:all .2s;">
+                <a href="{{ . | relURL }}" class="btn btn-lg" style="background:#fff;color:#15803D;border:none;padding:14px 36px;font-size:16px;font-weight:700;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.2);display:inline-flex;align-items:center;gap:10px;transition:all .2s;">
                     {{ with $.Site.Params.see_more.link_text }}{{ . | markdownify }}{{ end }}
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -21,5 +21,6 @@
 </section>
 {{ end }}
 {{ end }}
+
 
 
