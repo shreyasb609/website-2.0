@@ -276,7 +276,7 @@ hr {
 .heading p { font-size: 18px; color: var(--clr-muted); max-width: 600px; margin: 0 auto; }
 
 /* -- Feature Boxes ------------------------------------------- */
-.box-simple {
+.box-simple { text-align: center;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius-md);
@@ -290,7 +290,7 @@ hr {
   box-shadow: var(--shadow-md);
   border-color: #D1D5DB;
 }
-.box-simple .icon {
+.box-simple .icon { margin: 0 auto 24px;
   width: 56px;
   height: 56px;
   background: #FEF3C7; /* Soft amber */
@@ -560,4 +560,8 @@ hr {
   .home-carousel, #top, #footer, #copyright { display: none; }
   body { font-size: 12pt; background: #fff; }
 }
+
+
+
+
 
