@@ -15,7 +15,7 @@ type: "page"
 <div class="main-content">
 <div class="container">
 
-<div class="row" style="margin-bottom:56px;">
+<div class="row row-flex" style="margin-bottom:56px;">
 <div class="col-md-4 col-sm-6">
 <div class="box-simple" style="text-align:center;">
 <div class="icon" style="margin:0 auto 16px;"><i class="fas fa-dollar-sign"></i></div>
@@ -101,15 +101,15 @@ type: "page"
 <div class="col-md-4 col-md-offset-1">
 <h4 style="margin-bottom:20px;">Who we're looking for</h4>
 <ul style="list-style:none;padding:0;margin:0 0 32px;">
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
 <span style="font-size:14px;color:#44403C;line-height:1.6;">Strong academic background (GPA 3.5+) or equivalent expertise</span>
 </li>
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
 <span style="font-size:14px;color:#44403C;line-height:1.6;">University students, recent graduates, or credentialed teachers</span>
 </li>
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #e5e7eb;">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
 <span style="font-size:14px;color:#44403C;line-height:1.6;">Patience, reliability, and a genuine passion for helping others</span>
 </li>
@@ -118,7 +118,7 @@ type: "page"
 <span style="font-size:14px;color:#44403C;line-height:1.6;">Availability for at least 5 hours per week</span>
 </li>
 </ul>
-<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:22px 20px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:22px 20px;">
 <div style="font-weight:700;color:#14532D;margin-bottom:8px;font-size:14px;">
 <i class="fas fa-star"></i> Tutor Benefits
 </div>
@@ -135,6 +135,8 @@ type: "page"
 
 </div>
 </div>
+
+
 
 
 

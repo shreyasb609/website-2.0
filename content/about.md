@@ -52,10 +52,7 @@ type: "page"
 <p>From foundational math to AP exams — we cover it all with subject-matter experts.</p>
 </div>
 
-<div class="row">
-<div class="col-md-4 col-sm-6">
-<div class="box-simple">
-<div class="icon"><i class="fas fa-calculator"></i></div>
+<div class="row row-flex"><div class="col-md-4 col-sm-6"><div class="box-simple"><div class="icon"><i class="fas fa-calculator"></i></div>
 <h3>K–12 Mathematics</h3>
 <p>From foundational arithmetic and Pre-Algebra through Calculus AB/BC and Multivariable Calculus.</p>
 </div>
@@ -76,7 +73,7 @@ type: "page"
 </div>
 </div>
 
-<div class="row" style="margin-top:24px;">
+<div class="row row-flex" style="margin-top:24px;">
 <div class="col-md-4 col-sm-6">
 <div class="box-simple">
 <div class="icon"><i class="fas fa-laptop-code"></i></div>
@@ -108,7 +105,7 @@ type: "page"
 <p>From your first inquiry to measurable results — in 4 simple steps.</p>
 </div>
 
-<div class="row" style="margin-bottom:56px;">
+<div class="row row-flex" style="margin-bottom:56px;">
 <div class="col-md-3 col-sm-6 text-center">
 <div class="box-simple">
 <div class="step-number">1</div>
@@ -147,6 +144,9 @@ type: "page"
 
 </div>
 </div>
+
+
+
 
 
 

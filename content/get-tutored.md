@@ -102,7 +102,7 @@ type: "page"
 <p style="font-size:13.5px;margin:0;">Begin personalized instruction — fully customized to your pace and goals.</p>
 </div>
 </div>
-<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:22px 20px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:22px 20px;">
 <div style="font-weight:700;color:#14532D;margin-bottom:8px;">
 <i class="fas fa-shield-alt"></i> 100% Fit Guarantee
 </div>
@@ -123,6 +123,7 @@ type: "page"
 </div>
 </div>
 </div>
+
 
 
 
