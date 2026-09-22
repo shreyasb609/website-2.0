@@ -28,10 +28,14 @@ menu:
       name: "FAQ"
       url: "/faq/"
       weight: 5
+    - identifier: "menu.portal"
+      name: "Student Portal"
+      url: "/portal/"
+      weight: 6
     - identifier: "menu.contact"
       name: "Contact"
       url: "/contact/"
-      weight: 6
+      weight: 7
 
   topbar:
     - weight: 1
