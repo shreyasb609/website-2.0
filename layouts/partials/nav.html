@@ -26,10 +26,13 @@
                         {{ end }}
                         
                         {{ if .HasChildren }}
-                        <li class="dropdown {{ $active }}">
-                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                {{ .Name }} <span class="caret"></span>
-                            </a>
+                        <li class="dropdown {{ $active }} nav-split-dropdown">
+                            <div class="nav-link-group">
+                                <a href="{{ .URL | relURL }}" class="nav-main-link">{{ .Name }}</a>
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-caret-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="View {{ .Name }} Subsections">
+                                    <span class="caret"></span>
+                                </a>
+                            </div>
                             <ul class="dropdown-menu">
                                 {{ range .Children.ByWeight }}
                                 <li>
