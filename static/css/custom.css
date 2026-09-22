@@ -49,10 +49,14 @@ a:hover{color:var(--clr-accent-dk);}
 hr{border:none;border-top:1px solid var(--clr-border);margin:48px 0;}
 
 /* -- Top Bar ------------------------------------------------- */
-#top{background:var(--clr-topbar-bg);padding:10px 0;font-size:13.5px;font-weight:600;}
-#top p{color:#E5E7EB;margin:0;letter-spacing:0.01em;}
-#top .social a{color:#D1D5DB;font-size:13px;margin-left:16px;padding:4px 12px;border:1px solid rgba(255,255,255,0.2);border-radius:4px;transition:var(--transition);display:inline-flex;align-items:center;gap:6px;}
-#top .social a:hover{background:var(--clr-cta);border-color:var(--clr-cta);color:#fff;}
+#top{background:var(--clr-topbar-bg);padding:8px 0;font-size:13.5px;font-weight:600;}
+.top-bar-wrapper{display:flex;align-items:center;justify-content:space-between;min-height:34px;}
+.top-bar-left{display:flex;align-items:center;}
+.top-bar-left p{color:#E5E7EB;margin:0;letter-spacing:0.01em;font-size:13px;}
+.top-bar-right{display:flex;align-items:center;gap:10px;}
+.top-icon-btn{width:32px;height:32px;background:rgba(255,255,255,0.12);color:#FDFBF7!important;border:1px solid rgba(255,255,255,0.25);border-radius:6px;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;transition:var(--transition);text-decoration:none!important;}
+.top-icon-btn i{font-size:13.5px;line-height:1;margin:0;display:flex;align-items:center;justify-content:center;}
+.top-icon-btn:hover{background:var(--clr-cta)!important;border-color:var(--clr-cta)!important;color:#fff!important;transform:translateY(-1px);}
 
 /* -- Navigation & Dropdowns ---------------------------------- */
 .navbar-affixed-top{position:sticky;top:0;z-index:1000;}
