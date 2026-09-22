@@ -1,0 +1,693 @@
+<div class="page-hero">
+<div class="container">
+<div class="badge-pill-accent"><i class="fas fa-user-graduate"></i> Student &amp; Parent Portal</div>
+<h1>Your Elevate Account</h1>
+<p class="lead">Track your academic progress, match with expert tutors, and stay on top of upcoming class reminders.</p>
+</div>
+</div>
+
+<div class="main-content" style="background:#FDFBF7; padding: 40px 0 80px;">
+<div class="container">
+
+<!-- AUTH CONTAINER (Shown when logged out) -->
+<div id="auth-container" style="max-width: 540px; margin: 0 auto; display: block;">
+  <div class="box" style="padding: 40px 32px; background: #FFFFFF; border-radius: 16px; border: 1px solid #EAE4D9; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+    
+    <!-- Auth Mode Switcher -->
+    <div style="display: flex; background: #F3F1EC; border-radius: 10px; padding: 4px; margin-bottom: 28px;">
+      <button type="button" id="tab-btn-login" onclick="switchAuthMode('login')" style="flex: 1; padding: 10px; border: none; border-radius: 8px; font-weight: 700; font-size: 14.5px; cursor: pointer; background: #FFFFFF; color: #14532D; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <i class="fas fa-sign-in-alt"></i> Sign In
+      </button>
+      <button type="button" id="tab-btn-signup" onclick="switchAuthMode('signup')" style="flex: 1; padding: 10px; border: none; border-radius: 8px; font-weight: 700; font-size: 14.5px; cursor: pointer; background: transparent; color: #78716C;">
+        <i class="fas fa-user-plus"></i> Create Account
+      </button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="form-login" onsubmit="handleLogin(event)">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h3 style="font-family: var(--font-display); color: #292524; font-size: 24px; margin-bottom: 8px;">Welcome Back!</h3>
+        <p style="font-size: 14.5px; color: #78716C; margin: 0;">Sign in to access your dashboard, tutor matches, and class schedule.</p>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 18px;">
+        <label for="login-email">Email Address</label>
+        <input type="email" id="login-email" class="form-control" placeholder="e.g. alex@example.com" required value="alex.student@elevatetutoring.com">
+      </div>
+
+      <div class="form-group" style="margin-bottom: 24px;">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" class="form-control" placeholder="••••••••" required value="password123">
+      </div>
+
+      <button type="submit" class="btn btn-template-main btn-lg" style="width: 100%; justify-content: center; font-size: 16px;">
+        <i class="fas fa-sign-in-alt"></i> Sign In to Portal
+      </button>
+    </form>
+
+    <!-- SIGN UP FORM -->
+    <form id="form-signup" onsubmit="handleSignUp(event)" style="display: none;">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h3 style="font-family: var(--font-display); color: #292524; font-size: 24px; margin-bottom: 8px;">Create Your Elevate Account</h3>
+        <p style="font-size: 14.5px; color: #78716C; margin: 0;">Start tracking your learning progress and matching with expert tutors.</p>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 16px;">
+        <label for="signup-name">Full Name *</label>
+        <input type="text" id="signup-name" class="form-control" placeholder="e.g. Alex Johnson" required>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 16px;">
+        <label for="signup-email">Email Address *</label>
+        <input type="email" id="signup-email" class="form-control" placeholder="alex@example.com" required>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="signup-role">I am a...</label>
+            <select id="signup-role" class="form-control">
+              <option value="Student">Student</option>
+              <option value="Parent">Parent / Guardian</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="signup-grade">Grade / Level</label>
+            <select id="signup-grade" class="form-control">
+              <option value="High School (Grades 9-12)">High School (9-12)</option>
+              <option value="Middle School (Grades 6-8)">Middle School (6-8)</option>
+              <option value="College / Adult">College / Adult</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 16px;">
+        <label for="signup-subject">Primary Focus Subject *</label>
+        <input type="text" id="signup-subject" class="form-control" placeholder="e.g. AP Calculus BC, Physics, SAT Prep" required>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 24px;">
+        <label for="signup-password">Create Password *</label>
+        <input type="password" id="signup-password" class="form-control" placeholder="At least 6 characters" required>
+      </div>
+
+      <button type="submit" class="btn btn-template-main btn-lg" style="width: 100%; justify-content: center; font-size: 16px;">
+        <i class="fas fa-user-plus"></i> Create Account &amp; Access Portal
+      </button>
+    </form>
+
+    <!-- Quick Demo Access Divider -->
+    <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid #EAE4D9; text-align: center;">
+      <p style="font-size: 13px; color: #78716C; margin-bottom: 12px;">Want to explore without creating a password?</p>
+      <button type="button" onclick="handleDemoLogin()" class="btn" style="background: #F0FDF4; color: #15803D; border: 1.5px solid #BBF7D0; width: 100%; justify-content: center; font-size: 14px;">
+        <i class="fas fa-magic"></i> Instant Demo Login (Sample Student Account)
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- LOGGED IN DASHBOARD PORTAL (Shown when logged in) -->
+<div id="portal-dashboard" style="display: none;">
+  
+  <!-- Dashboard Top Header Bar -->
+  <div style="background: #FFFFFF; border: 1px solid #EAE4D9; border-radius: 16px; padding: 24px 28px; margin-bottom: 32px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div style="width: 54px; height: 54px; background: #14532D; color: #FFFFFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; font-family: var(--font-display);" id="user-avatar">
+        AJ
+      </div>
+      <div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #292524; margin: 0 0 4px;" id="user-greeting">Welcome, Alex Johnson!</h3>
+        <div style="display: flex; align-items: center; gap: 12px; font-size: 13.5px; color: #78716C;">
+          <span><i class="fas fa-user-tag" style="color:#D97706;"></i> <span id="user-role-badge">Student • High School (Grades 9-12)</span></span>
+          <span>•</span>
+          <span><i class="fas fa-check-circle" style="color:#15803D;"></i> Account Active</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button type="button" onclick="openMatchModal()" class="btn btn-template-main" style="padding: 10px 18px; font-size: 14px;">
+        <i class="fas fa-search-plus"></i> Match New Tutor
+      </button>
+      <button type="button" onclick="handleLogout()" class="btn" style="background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9; padding: 10px 16px; font-size: 14px;">
+        <i class="fas fa-sign-out-alt"></i> Sign Out
+      </button>
+    </div>
+  </div>
+
+  <!-- UPCOMING CLASS REMINDER ALERT CARD -->
+  <div style="background: linear-gradient(135deg, #14532D 0%, #064E3B 100%); border-radius: 16px; padding: 28px; color: #FFFFFF; margin-bottom: 36px; box-shadow: 0 8px 24px rgba(20,83,45,0.25); position: relative; overflow: hidden;">
+    <div style="position: absolute; right: -20px; bottom: -20px; opacity: 0.1; font-size: 160px; color: #fff;">
+      <i class="fas fa-clock"></i>
+    </div>
+    <div class="row" style="align-items: center; position: relative; z-index: 2;">
+      <div class="col-md-7 col-sm-12" style="margin-bottom: 16px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.18); color: #FEF3C7; padding: 4px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">
+          <i class="fas fa-bell"></i> Next Class Reminder
+        </div>
+        <h3 style="color: #FFFFFF; font-size: 22px; font-weight: 700; margin-bottom: 8px;">
+          AP Calculus BC — Derivatives &amp; Optimization
+        </h3>
+        <p style="color: #D1FAE5; font-size: 15px; margin: 0 0 12px;">
+          With <strong>Dr. Sarah Lin</strong> &nbsp;•&nbsp; Tomorrow, 5:00 PM – 6:00 PM EST
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; color: #E5E7EB;">
+          <span><i class="fas fa-video" style="color:#FEF3C7;"></i> Zoom Video &amp; Digital Whiteboard</span>
+          <span><i class="fas fa-mobile-alt" style="color:#FEF3C7;"></i> SMS Reminder Enabled (1h prior)</span>
+        </div>
+      </div>
+      
+      <div class="col-md-5 col-sm-12 text-center" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+        <a href="https://zoom.us" target="_blank" class="btn" style="background: #D97706; color: #FFFFFF; border: none; padding: 14px 28px; font-size: 15px; width: 100%; justify-content: center; box-shadow: 0 4px 12px rgba(217,119,6,0.4);">
+          <i class="fas fa-video"></i> Join Classroom (Zoom Link)
+        </a>
+        <button type="button" onclick="toggleClassReminders()" id="btn-reminder-toggle" class="btn" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); padding: 10px 20px; font-size: 13.5px; width: 100%; justify-content: center;">
+          <i class="fas fa-check-circle" style="color:#FEF3C7;"></i> Reminders Active (Click to Manage)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTAL NAVIGATION TABS -->
+  <ul class="nav nav-tabs" style="border-bottom: 2px solid #EAE4D9; margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px;">
+    <li class="active" id="tab-nav-progress">
+      <a href="javascript:void(0)" onclick="showPortalTab('progress')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+        <i class="fas fa-chart-line" style="color:#D97706;"></i> Progress Tracking
+      </a>
+    </li>
+    <li id="tab-nav-tutors">
+      <a href="javascript:void(0)" onclick="showPortalTab('tutors')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+        <i class="fas fa-user-friends" style="color:#15803D;"></i> My Tutor Matches
+      </a>
+    </li>
+    <li id="tab-nav-schedule">
+      <a href="javascript:void(0)" onclick="showPortalTab('schedule')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+        <i class="fas fa-calendar-alt" style="color:#D97706;"></i> Schedule &amp; Reminders
+      </a>
+    </li>
+    <li id="tab-nav-resources">
+      <a href="javascript:void(0)" onclick="showPortalTab('resources')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+        <i class="fas fa-folder-open" style="color:#15803D;"></i> Session Notes &amp; Practice
+      </a>
+    </li>
+  </ul>
+
+  <!-- TAB 1: PROGRESS TRACKING & STATS -->
+  <div id="tab-content-progress" class="portal-tab-pane" style="display: block;">
+    
+    <!-- Top Stats Row -->
+    <div class="row row-flex" style="margin-bottom: 32px;">
+      <div class="col-md-3 col-sm-6">
+        <div class="box" style="text-align: center; padding: 24px;">
+          <span class="stat-number">24 hrs</span>
+          <span class="stat-label">Total Tutoring Hours</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="box" style="text-align: center; padding: 24px;">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Sessions Completed</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="box" style="text-align: center; padding: 24px;">
+          <span class="stat-number">92%</span>
+          <span class="stat-label">Average Mastery Rate</span>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="box" style="text-align: center; padding: 24px;">
+          <span class="stat-number">+140 pts</span>
+          <span class="stat-label">SAT Score Boost</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed Subject Progress Cards -->
+    <div class="row">
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+            <h4 style="margin: 0; font-weight: 700; color: #292524;"><i class="fas fa-calculator" style="color:#15803D;"></i> AP Calculus BC</h4>
+            <span style="background: #F0FDF4; color: #15803D; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 13px;">On Track for 5/5</span>
+          </div>
+          <p style="font-size: 14px; color: #78716C; margin-bottom: 12px;">Tutor: Dr. Sarah Lin • Last Session: Yesterday</p>
+          
+          <div style="margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 700; margin-bottom: 6px;">
+              <span>Overall Unit Mastery</span>
+              <span style="color:#15803D;">88%</span>
+            </div>
+            <div style="background: #EAE4D9; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="background: #15803D; height: 100%; width: 88%; border-radius: 5px;"></div>
+            </div>
+          </div>
+
+          <ul style="padding-left: 18px; font-size: 14px; color: #44403C; line-height: 1.8; margin: 0;">
+            <li><strong>Derivatives &amp; Chain Rule:</strong> Mastered (100%)</li>
+            <li><strong>Integration &amp; Area Under Curves:</strong> Proficient (85%)</li>
+            <li><strong>Taylor &amp; Maclaurin Series:</strong> Currently Studying (75%)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+            <h4 style="margin: 0; font-weight: 700; color: #292524;"><i class="fas fa-atom" style="color:#D97706;"></i> Physics 1 (AP Mechanics)</h4>
+            <span style="background: #FEF3C7; color: #D97706; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 13px;">Grade: A (94%)</span>
+          </div>
+          <p style="font-size: 14px; color: #78716C; margin-bottom: 12px;">Tutor: Marcus Vance • Last Session: 3 days ago</p>
+
+          <div style="margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 700; margin-bottom: 6px;">
+              <span>Overall Unit Mastery</span>
+              <span style="color:#D97706;">94%</span>
+            </div>
+            <div style="background: #EAE4D9; height: 10px; border-radius: 5px; overflow: hidden;">
+              <div style="background: #D97706; height: 100%; width: 94%; border-radius: 5px;"></div>
+            </div>
+          </div>
+
+          <ul style="padding-left: 18px; font-size: 14px; color: #44403C; line-height: 1.8; margin: 0;">
+            <li><strong>Kinematics &amp; Projectile Motion:</strong> Mastered (98%)</li>
+            <li><strong>Newton's Laws &amp; Friction:</strong> Mastered (95%)</li>
+            <li><strong>Rotational Dynamics:</strong> Review Scheduled</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: MY TUTOR MATCHES -->
+  <div id="tab-content-tutors" class="portal-tab-pane" style="display: none;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <h3 style="margin: 0 0 4px; font-weight: 700;">Your Active Matched Tutors</h3>
+        <p style="margin: 0; font-size: 14.5px; color: #78716C;">Hand-selected instructors matched specifically to your learning goals.</p>
+      </div>
+      <button type="button" onclick="openMatchModal()" class="btn btn-template-main">
+        <i class="fas fa-plus-circle"></i> Request New Subject Tutor
+      </button>
+    </div>
+
+    <div class="row">
+      <!-- Tutor Card 1 -->
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <div style="display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: #F0FDF4; border: 2px solid #BBF7D0; color: #15803D; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; flex-shrink: 0;">
+              SL
+            </div>
+            <div>
+              <h4 style="margin: 0 0 4px; font-weight: 700; color: #292524;">Dr. Sarah Lin</h4>
+              <p style="font-size: 13.5px; color: #15803D; font-weight: 700; margin: 0 0 4px;">AP Calculus &amp; Pure Mathematics Expert</p>
+              <p style="font-size: 13px; color: #78716C; margin: 0;"><i class="fas fa-graduation-cap"></i> Ph.D. Mathematics, Stanford University • 4.95 ★ Rating</p>
+            </div>
+          </div>
+          <div style="background: #F3F1EC; border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 14px; color: #44403C;">
+            <strong>Recent Tutor Feedback:</strong> "Alex showed exceptional speed solving implicit differentiation problems during Thursday's session."
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-template-main" style="flex: 1; justify-content: center; font-size: 13.5px;">
+              <i class="fas fa-comment-dots"></i> Message Tutor
+            </a>
+            <button type="button" onclick="showPortalTab('schedule')" class="btn" style="background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9; font-size: 13.5px;">
+              <i class="fas fa-calendar-alt"></i> View Schedule
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tutor Card 2 -->
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <div style="display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: #FEF3C7; border: 2px solid #FDE68A; color: #D97706; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; flex-shrink: 0;">
+              MV
+            </div>
+            <div>
+              <h4 style="margin: 0 0 4px; font-weight: 700; color: #292524;">Marcus Vance</h4>
+              <p style="font-size: 13.5px; color: #D97706; font-weight: 700; margin: 0 0 4px;">Physics &amp; SAT Prep Specialist</p>
+              <p style="font-size: 13px; color: #78716C; margin: 0;"><i class="fas fa-graduation-cap"></i> B.S. Mechanical Engineering, UC Berkeley • 4.9 ★ Rating</p>
+            </div>
+          </div>
+          <div style="background: #F3F1EC; border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 14px; color: #44403C;">
+            <strong>Recent Tutor Feedback:</strong> "Great work mastering energy conservation equations! Practice set 4 is ready."
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-template-main" style="flex: 1; justify-content: center; font-size: 13.5px;">
+              <i class="fas fa-comment-dots"></i> Message Tutor
+            </a>
+            <button type="button" onclick="showPortalTab('schedule')" class="btn" style="background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9; font-size: 13.5px;">
+              <i class="fas fa-calendar-alt"></i> View Schedule
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: SCHEDULE & CLASS REMINDERS -->
+  <div id="tab-content-schedule" class="portal-tab-pane" style="display: none;">
+    
+    <!-- Reminders Facility Settings Card -->
+    <div class="box" style="padding: 28px; margin-bottom: 32px; background: #FFFFFF; border-left: 5px solid #15803D;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px;">
+        <div>
+          <h4 style="margin: 0 0 6px; font-weight: 700;"><i class="fas fa-bell" style="color:#D97706;"></i> Class Reminders &amp; Notification Settings</h4>
+          <p style="margin: 0; font-size: 14px; color: #78716C;">Receive automated alerts so you never miss a 1-on-1 tutoring session.</p>
+        </div>
+        <span class="badge-pill-accent" style="background: #F0FDF4; color: #15803D; border: 1px solid #BBF7D0;"><i class="fas fa-shield-alt"></i> Active Notifications</span>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4" style="margin-bottom: 12px;">
+          <label style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; cursor: pointer;">
+            <input type="checkbox" id="remind-sms" checked onchange="saveReminderSettings()" style="width: 18px; height: 18px; accent-color: #15803D;">
+            <span><i class="fas fa-sms" style="color:#15803D;"></i> SMS Text Alert (1 Hour Prior)</span>
+          </label>
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 12px;">
+          <label style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; cursor: pointer;">
+            <input type="checkbox" id="remind-email" checked onchange="saveReminderSettings()" style="width: 18px; height: 18px; accent-color: #15803D;">
+            <span><i class="fas fa-envelope" style="color:#D97706;"></i> Email Briefing (24 Hours Prior)</span>
+          </label>
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 12px;">
+          <label style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; cursor: pointer;">
+            <input type="checkbox" id="remind-cal" checked onchange="saveReminderSettings()" style="width: 18px; height: 18px; accent-color: #15803D;">
+            <span><i class="fas fa-calendar-check" style="color:#15803D;"></i> Google / iCal Calendar Sync</span>
+          </label>
+        </div>
+      </div>
+      <div id="reminder-status-msg" style="font-size: 13px; color: #15803D; margin-top: 10px; display: none;">
+        <i class="fas fa-check"></i> Reminder preferences saved successfully!
+      </div>
+    </div>
+
+    <!-- Upcoming Sessions Table -->
+    <div class="box" style="padding: 28px;">
+      <h4 style="margin: 0 0 20px; font-weight: 700;">Upcoming Scheduled Classes</h4>
+      
+      <div class="table-responsive">
+        <table class="table" style="font-size: 14.5px; margin: 0;">
+          <thead>
+            <tr style="border-bottom: 2px solid #EAE4D9; color: #292524;">
+              <th>Subject / Class</th>
+              <th>Tutor</th>
+              <th>Date &amp; Time</th>
+              <th>Format</th>
+              <th>Status / Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AP Calculus BC</strong></td>
+              <td>Dr. Sarah Lin</td>
+              <td>Tomorrow • 5:00 PM EST</td>
+              <td><span style="background: #F0FDF4; color: #15803D; padding: 4px 8px; border-radius: 4px; font-size: 12.5px; font-weight: 700;">Online Video</span></td>
+              <td>
+                <a href="https://zoom.us" target="_blank" class="btn btn-template-main" style="padding: 6px 14px; font-size: 13px;">
+                  <i class="fas fa-video"></i> Join Class
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Physics 1 Mechanics</strong></td>
+              <td>Marcus Vance</td>
+              <td>Thursday • 4:00 PM EST</td>
+              <td><span style="background: #F0FDF4; color: #15803D; padding: 4px 8px; border-radius: 4px; font-size: 12.5px; font-weight: 700;">Online Video</span></td>
+              <td>
+                <span style="color: #78716C; font-size: 13px;"><i class="fas fa-clock"></i> Reminder Set (24h)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>SAT Math Drill Session</strong></td>
+              <td>Marcus Vance</td>
+              <td>Saturday • 11:00 AM EST</td>
+              <td><span style="background: #FEF3C7; color: #D97706; padding: 4px 8px; border-radius: 4px; font-size: 12.5px; font-weight: 700;">In-Person / Online</span></td>
+              <td>
+                <span style="color: #78716C; font-size: 13px;"><i class="fas fa-clock"></i> Reminder Set (24h)</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: SESSION NOTES & RESOURCES -->
+  <div id="tab-content-resources" class="portal-tab-pane" style="display: none;">
+    <div class="row">
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <h4 style="margin: 0 0 16px; font-weight: 700;"><i class="fas fa-file-pdf" style="color:#D97706;"></i> Whiteboard Notes &amp; Session Logs</h4>
+          <ul class="list-unstyled" style="margin: 0; line-height: 2.2; font-size: 14.5px;">
+            <li style="border-bottom: 1px solid #EAE4D9; padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
+              <span><i class="fas fa-file-alt" style="color:#15803D;"></i> Calculus_Derivatives_Notes_Sept20.pdf</span>
+              <a href="javascript:alert('Downloading session whiteboard notes PDF...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+            </li>
+            <li style="border-bottom: 1px solid #EAE4D9; padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
+              <span><i class="fas fa-file-alt" style="color:#15803D;"></i> Physics_Kinematics_ProblemSet3.pdf</span>
+              <a href="javascript:alert('Downloading practice problem set PDF...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+            </li>
+            <li style="padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
+              <span><i class="fas fa-file-alt" style="color:#15803D;"></i> SAT_Math_Formula_CheatSheet.pdf</span>
+              <a href="javascript:alert('Downloading SAT cheat sheet...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="margin-bottom: 24px;">
+        <div class="box" style="padding: 28px;">
+          <h4 style="margin: 0 0 16px; font-weight: 700;"><i class="fas fa-tasks" style="color:#15803D;"></i> Assigned Practice &amp; Homework</h4>
+          <div style="background: #F0FDF4; border-left: 4px solid #15803D; padding: 16px; border-radius: 6px; margin-bottom: 14px;">
+            <div style="font-weight: 700; color: #14532D; font-size: 14.5px;">AP Calculus Practice Set #4</div>
+            <p style="font-size: 13.5px; color: #15803D; margin: 4px 0 0;">Complete odd problems #1–15 on optimization before tomorrow's 5 PM class.</p>
+          </div>
+          <div style="background: #FEF3C7; border-left: 4px solid #D97706; padding: 16px; border-radius: 6px;">
+            <div style="font-weight: 700; color: #B45309; font-size: 14.5px;">Physics Free Response Diagnostic</div>
+            <p style="font-size: 13.5px; color: #D97706; margin: 4px 0 0;">Review rotational motion diagram question set for Thursday session.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- TUTOR MATCH REQUEST MODAL -->
+<div id="modal-match" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center;">
+  <div style="background: #FFFFFF; border-radius: 16px; width: 90%; max-width: 520px; padding: 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); position: relative;">
+    <button type="button" onclick="closeMatchModal()" style="position: absolute; right: 20px; top: 20px; border: none; background: transparent; font-size: 20px; color: #78716C; cursor: pointer;">&times;</button>
+    
+    <h3 style="font-family: var(--font-display); color: #292524; font-size: 22px; margin-bottom: 8px;"><i class="fas fa-magic" style="color:#D97706;"></i> Request New Subject Tutor Match</h3>
+    <p style="font-size: 14px; color: #78716C; margin-bottom: 20px;">Tell us what subject you need help with and our advisor algorithm will match you within 24 hours.</p>
+
+    <form onsubmit="handleMatchRequest(event)">
+      <div class="form-group" style="margin-bottom: 16px;">
+        <label for="match-subject">Target Subject / Course</label>
+        <input type="text" id="match-subject" class="form-control" placeholder="e.g. AP Chemistry, Python, ACT English" required>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 16px;">
+        <label for="match-goal">Primary Academic Goal</label>
+        <select id="match-goal" class="form-control">
+          <option>Improve Grade (A / Boost GPA)</option>
+          <option>AP / Standardized Exam Prep</option>
+          <option>Build Stronger Foundations</option>
+          <option>Homework &amp; Test Catch-up</option>
+        </select>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 24px;">
+        <label for="match-pref">Preferred Time &amp; Days</label>
+        <input type="text" id="match-pref" class="form-control" placeholder="e.g. Weekdays after 4 PM EST">
+      </div>
+
+      <button type="submit" class="btn btn-template-main btn-lg" style="width: 100%; justify-content: center; font-size: 15px;">
+        <i class="fas fa-paper-plane"></i> Submit Tutor Match Request
+      </button>
+    </form>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+// --- CLIENT-SIDE ACCOUNT & PORTAL STATE HANDLER ---
+const STORAGE_KEY = 'elevate_user_account';
+
+function getSavedUser() {
+  try {
+    const data = localStorage.getItem(STORAGE_KEY);
+    return data ? JSON.parse(data) : null;
+  } catch(e) {
+    return null;
+  }
+}
+
+function saveUser(userData) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(userData));
+  } catch(e) {}
+}
+
+function removeUser() {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch(e) {}
+}
+
+function updatePortalUI() {
+  const user = getSavedUser();
+  const authContainer = document.getElementById('auth-container');
+  const portalDashboard = document.getElementById('portal-dashboard');
+
+  if (user && user.isLoggedIn) {
+    authContainer.style.display = 'none';
+    portalDashboard.style.display = 'block';
+
+    // Populate user info
+    document.getElementById('user-greeting').innerText = `Welcome back, ${user.name}!`;
+    document.getElementById('user-role-badge').innerText = `${user.role || 'Student'} • ${user.grade || 'High School'}`;
+    
+    // Avatar initials
+    const initials = user.name ? user.name.split(' ').map(n => n[0]).join('').toUpperCase().substring(0,2) : 'AJ';
+    document.getElementById('user-avatar').innerText = initials;
+  } else {
+    authContainer.style.display = 'block';
+    portalDashboard.style.display = 'none';
+  }
+}
+
+function switchAuthMode(mode) {
+  const loginForm = document.getElementById('form-login');
+  const signupForm = document.getElementById('form-signup');
+  const btnLogin = document.getElementById('tab-btn-login');
+  const btnSignup = document.getElementById('tab-btn-signup');
+
+  if (mode === 'login') {
+    loginForm.style.display = 'block';
+    signupForm.style.display = 'none';
+    btnLogin.style.background = '#FFFFFF';
+    btnLogin.style.color = '#14532D';
+    btnLogin.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+    btnSignup.style.background = 'transparent';
+    btnSignup.style.color = '#78716C';
+  } else {
+    loginForm.style.display = 'none';
+    signupForm.style.display = 'block';
+    btnSignup.style.background = '#FFFFFF';
+    btnSignup.style.color = '#14532D';
+    btnSignup.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+    btnLogin.style.background = 'transparent';
+    btnLogin.style.color = '#78716C';
+  }
+}
+
+function handleLogin(e) {
+  e.preventDefault();
+  const email = document.getElementById('login-email').value;
+  const user = {
+    name: email.split('@')[0].replace('.', ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase()) || 'Alex Johnson',
+    email: email,
+    role: 'Student',
+    grade: 'High School (Grades 9-12)',
+    isLoggedIn: true
+  };
+  saveUser(user);
+  updatePortalUI();
+}
+
+function handleSignUp(e) {
+  e.preventDefault();
+  const name = document.getElementById('signup-name').value;
+  const email = document.getElementById('signup-email').value;
+  const role = document.getElementById('signup-role').value;
+  const grade = document.getElementById('signup-grade').value;
+  const subject = document.getElementById('signup-subject').value;
+
+  const user = {
+    name: name,
+    email: email,
+    role: role,
+    grade: grade,
+    subject: subject,
+    isLoggedIn: true
+  };
+  saveUser(user);
+  updatePortalUI();
+}
+
+function handleDemoLogin() {
+  const demoUser = {
+    name: 'Alex Johnson',
+    email: 'alex.student@elevatetutoring.com',
+    role: 'Student',
+    grade: 'High School (Grades 9-12)',
+    subject: 'AP Calculus BC & Physics',
+    isLoggedIn: true
+  };
+  saveUser(demoUser);
+  updatePortalUI();
+}
+
+function handleLogout() {
+  removeUser();
+  updatePortalUI();
+}
+
+function showPortalTab(tabName) {
+  const panes = document.querySelectorAll('.portal-tab-pane');
+  panes.forEach(pane => pane.style.display = 'none');
+
+  const navItems = document.querySelectorAll('.nav-tabs li');
+  navItems.forEach(item => item.classList.remove('active'));
+
+  document.getElementById('tab-content-' + tabName).style.display = 'block';
+  document.getElementById('tab-nav-' + tabName).classList.add('active');
+}
+
+function toggleClassReminders() {
+  const btn = document.getElementById('btn-reminder-toggle');
+  if (btn.innerText.includes('Active')) {
+    btn.innerHTML = '<i class="fas fa-bell-slash"></i> Reminders Paused (Click to Resume)';
+    btn.style.background = 'rgba(255,255,255,0.08)';
+  } else {
+    btn.innerHTML = '<i class="fas fa-check-circle" style="color:#FEF3C7;"></i> Reminders Active (Click to Manage)';
+    btn.style.background = 'rgba(255,255,255,0.15)';
+  }
+}
+
+function saveReminderSettings() {
+  const msg = document.getElementById('reminder-status-msg');
+  msg.style.display = 'block';
+  setTimeout(() => { msg.style.display = 'none'; }, 3000);
+}
+
+function openMatchModal() {
+  document.getElementById('modal-match').style.display = 'flex';
+}
+
+function closeMatchModal() {
+  document.getElementById('modal-match').style.display = 'none';
+}
+
+function handleMatchRequest(e) {
+  e.preventDefault();
+  const subject = document.getElementById('match-subject').value;
+  alert('Tutor match request for ' + subject + ' submitted! An academic advisor will reach out within 24 hours with your tutor profile match.');
+  closeMatchModal();
+}
+
+// Initialize UI on page load
+document.addEventListener('DOMContentLoaded', updatePortalUI);
+</script>
