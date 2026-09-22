@@ -102,7 +102,7 @@ params:
   copyright: "© 2026 Elevate Tutoring. All rights reserved."
 
   date_format: "January 2, 2006"
-  dropdown_mouse_over: true
+  dropdown_mouse_over: false
 
   # Top bar
   topbar:

@@ -69,7 +69,6 @@ hr{border:none;border-top:1px solid var(--clr-border);margin:48px 0;}
   color: var(--clr-cta);
   transition: transform 0.2s ease;
 }
-.navbar-nav > li.dropdown:hover > a .caret,
 .navbar-nav > li.dropdown.open > a .caret {
   transform: rotate(180deg);
 }
@@ -95,11 +94,6 @@ hr{border:none;border-top:1px solid var(--clr-border);margin:48px 0;}
   background: var(--clr-accent-lt) !important;
   color: var(--clr-accent) !important;
   padding-left: 24px;
-}
-@media (min-width: 769px) {
-  .navbar-nav > li.dropdown:hover > .dropdown-menu {
-    display: block;
-  }
 }
 
 /* -- Hero ---------------------------------------------------- */
