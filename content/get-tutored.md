@@ -8,7 +8,7 @@ type: "page"
 <div class="container">
 <div class="badge-pill-accent">Free Consultation</div>
 <h1>Get Tutored</h1>
-<p class="lead">Tell us your goals — we'll match you with the perfect tutor within 24 hours.</p>
+<p class="lead">Tell us your goals, and we will match you with the perfect tutor within 24 hours.</p>
 </div>
 </div>
 
@@ -41,8 +41,8 @@ type: "page"
 <div class="form-group">
 <label for="grade_level">Grade Level</label>
 <select class="form-control" id="grade_level" name="grade_level">
-<option>Middle School (Grades 6–8)</option>
-<option selected>High School (Grades 9–12)</option>
+<option>Middle School (Grades 6-8)</option>
+<option selected>High School (Grades 9-12)</option>
 <option>College / University</option>
 <option>Adult Learner</option>
 </select>
@@ -52,7 +52,7 @@ type: "page"
 <div class="form-group">
 <label for="format">Preferred Format</label>
 <select class="form-control" id="format" name="format">
-<option selected>Online (1–2 hrs / week)</option>
+<option selected>Online (1-2 hrs / week)</option>
 <option>Online (3+ hrs / week intensive)</option>
 <option>In-Person (Local)</option>
 </select>
@@ -99,14 +99,14 @@ type: "page"
 <div class="step-number" style="flex-shrink:0;margin:0;">3</div>
 <div>
 <strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Start your first session</strong>
-<p style="font-size:13.5px;margin:0;">Begin personalized instruction — fully customized to your pace and goals.</p>
+<p style="font-size:13.5px;margin:0;">Begin personalized instruction, fully customized to your pace and goals.</p>
 </div>
 </div>
 <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:22px 20px;">
 <div style="font-weight:700;color:#14532D;margin-bottom:8px;">
 <i class="fas fa-shield-alt"></i> 100% Fit Guarantee
 </div>
-<p style="font-size:13.5px;color:#15803D;margin:0;line-height:1.65;">If you're not happy with your first tutor, we'll rematch you for free and credit your session.</p>
+<p style="font-size:13.5px;color:#15803D;margin:0;line-height:1.65;">If you are not satisfied with your first tutor, we will rematch you for free and credit your session.</p>
 </div>
 <div style="margin-top:20px;background:#f9fafb;border:1px solid #EAE4D9;border-radius:10px;padding:20px;">
 <div style="font-size:13px;font-weight:700;color:#44403C;margin-bottom:6px;">
@@ -123,7 +123,3 @@ type: "page"
 </div>
 </div>
 </div>
-
-
-
-

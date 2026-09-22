@@ -18,23 +18,23 @@ type: "page"
 <div class="row row-flex" style="margin-bottom:56px;">
 <div class="col-md-4 col-sm-6">
 <div class="box-simple" style="text-align:center;">
-<div class="icon" style="margin:0 auto 16px;"><i class="fas fa-dollar-sign"></i></div>
+<div class="icon"><i class="fas fa-dollar-sign"></i></div>
 <h4>Competitive Pay</h4>
 <p>Premium hourly rates that reflect your subject mastery and teaching experience.</p>
 </div>
 </div>
 <div class="col-md-4 col-sm-6">
 <div class="box-simple" style="text-align:center;">
-<div class="icon" style="margin:0 auto 16px;"><i class="fas fa-clock"></i></div>
+<div class="icon"><i class="fas fa-clock"></i></div>
 <h4>Flexible Scheduling</h4>
 <p>Set your own hours around classes, research, or other work commitments.</p>
 </div>
 </div>
 <div class="col-md-4 col-sm-6">
 <div class="box-simple" style="text-align:center;">
-<div class="icon" style="margin:0 auto 16px;"><i class="fas fa-laptop"></i></div>
+<div class="icon"><i class="fas fa-laptop"></i></div>
 <h4>Remote &amp; In-Person</h4>
-<p>Teach online from anywhere, or meet students locally — your choice.</p>
+<p>Teach online from anywhere, or meet students locally based on your preference.</p>
 </div>
 </div>
 </div>
@@ -45,7 +45,7 @@ type: "page"
 <div class="col-md-7">
 <div class="box">
 <h3 style="margin-bottom:6px;">Tutor Application Form</h3>
-<p style="margin-bottom:28px;">Applications are reviewed on a rolling basis. We'll be in touch within 2–3 business days.</p>
+<p style="margin-bottom:28px;">Applications are reviewed on a rolling basis. We will be in touch within 2-3 business days.</p>
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 <div class="row">
 <div class="col-sm-6">
@@ -73,8 +73,8 @@ type: "page"
 <label for="experience">Teaching / Tutoring Experience</label>
 <select class="form-control" id="experience" name="experience">
 <option>New / Peer Mentoring</option>
-<option selected>1–2 Years</option>
-<option>3–5 Years</option>
+<option selected>1-2 Years</option>
+<option>3-5 Years</option>
 <option>5+ Years</option>
 </select>
 </div>
@@ -92,7 +92,7 @@ type: "page"
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-user-plus"></i> Submit Application
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">We review all applications carefully and respond within 2–3 business days.</p>
+<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">We review all applications carefully and respond within 2-3 business days.</p>
 </div>
 </form>
 </div>
@@ -135,8 +135,3 @@ type: "page"
 
 </div>
 </div>
-
-
-
-
-

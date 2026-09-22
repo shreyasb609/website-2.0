@@ -1,5 +1,5 @@
 <header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+    <div class="navbar navbar-default yamm mouseover" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ "" | relURL }}">
@@ -24,9 +24,25 @@
                         {{ if eq $current.RelPermalink .URL }}
                             {{ $active = "active" }}
                         {{ end }}
+                        
+                        {{ if .HasChildren }}
+                        <li class="dropdown {{ $active }}">
+                            <a href="{{ .URL | relURL }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ .Name }} <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {{ range .Children.ByWeight }}
+                                <li>
+                                    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                        {{ else }}
                         <li class="{{ $active }}">
                             <a href="{{ .URL | relURL }}">{{ .Name }}</a>
                         </li>
+                        {{ end }}
                     {{ end }}
                     <li style="display:flex;align-items:center;gap:8px;padding-left:8px;">
                         <a href="{{ "portal/" | relURL }}" class="btn" style="margin: 14px 0; padding: 7px 14px; font-size: 13.5px; background: #F0FDF4; color: #15803D; border: 1.5px solid #BBF7D0;">
@@ -42,4 +58,3 @@
         </div>
     </div>
 </header>
-
