@@ -46,7 +46,7 @@ type: "page"
 
 <hr>
 
-<div class="heading" style="margin-top:64px;" id="subjects">
+<div class="heading text-center" style="margin-top:64px;" id="subjects">
 <div class="badge-pill-accent">Subjects</div>
 <h2>Comprehensive Tutoring Programs</h2>
 <p>From foundational math to AP exams, we cover it all with dedicated subject-matter experts.</p>
@@ -102,7 +102,7 @@ type: "page"
 
 <hr>
 
-<div class="heading" style="margin-top:64px;" id="how-it-works">
+<div class="heading text-center" style="margin-top:64px;" id="how-it-works">
 <div class="badge-pill-accent">How It Works</div>
 <h2>Our 4-Step Learning Process</h2>
 <p>From your first inquiry to measurable results in four simple steps.</p>

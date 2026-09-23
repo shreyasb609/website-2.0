@@ -40,7 +40,7 @@
 
 
 
-<link href="/website-2.0/css/custom.css?1790124074" rel="stylesheet">
+<link href="/website-2.0/css/custom.css?1790125384" rel="stylesheet">
 
 
 
@@ -157,14 +157,9 @@
                         
                         
                         
-                        <li class="dropdown  nav-split-dropdown">
-                            <div class="nav-link-group">
-                                <a href="/website-2.0/about/" class="nav-main-link">Purpose &amp; What We Do</a>
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-caret-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="View Purpose &amp; What We Do Subsections">
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <ul class="dropdown-menu">
+                        <li class="elevate-split-item ">
+                            <a href="/website-2.0/about/" class="elevate-nav-link">Purpose &amp; What We Do</a><button class="elevate-caret-btn" aria-label="Toggle submenu" title="Toggle Purpose &amp; What We Do submenu"><span class="caret"></span></button>
+                            <ul class="elevate-dropdown">
                                 
                                 <li>
                                     <a href="/website-2.0/about/#mission">Our Mission</a>
@@ -191,14 +186,9 @@
                         
                         
                         
-                        <li class="dropdown  nav-split-dropdown">
-                            <div class="nav-link-group">
-                                <a href="/website-2.0/get-tutored/" class="nav-main-link">Programs &amp; Tutoring</a>
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-caret-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="View Programs &amp; Tutoring Subsections">
-                                    <span class="caret"></span>
-                                </a>
-                            </div>
-                            <ul class="dropdown-menu">
+                        <li class="elevate-split-item ">
+                            <a href="/website-2.0/get-tutored/" class="elevate-nav-link">Programs &amp; Tutoring</a><button class="elevate-caret-btn" aria-label="Toggle submenu" title="Toggle Programs &amp; Tutoring submenu"><span class="caret"></span></button>
+                            <ul class="elevate-dropdown">
                                 
                                 <li>
                                     <a href="/website-2.0/get-tutored/">Request a Tutor</a>
@@ -250,11 +240,11 @@
                         </li>
                         
                     
-                    <li style="display:flex;align-items:center;gap:8px;padding-left:8px;">
-                        <a href="/website-2.0/portal/" class="btn" style="margin: 14px 0; padding: 7px 14px; font-size: 13.5px; background: #F0FDF4; color: #15803D; border: 1.5px solid #BBF7D0;">
+                    <li class="elevate-nav-cta-group">
+                        <a href="/website-2.0/portal/" class="btn elevate-btn-portal">
                             <i class="fas fa-user-circle"></i> Student Portal
                         </a>
-                        <a href="/website-2.0/get-tutored/" class="btn btn-template-main" style="margin: 14px 0; padding: 8px 18px; font-size: 13.5px;">
+                        <a href="/website-2.0/get-tutored/" class="btn btn-template-main elevate-btn-cta">
                             Get Tutored
                         </a>
                     </li>
@@ -264,6 +254,83 @@
         </div>
     </div>
 </header>
+
+<script>
+(function() {
+     
+     
+    function initElevateNav() {
+        var splitItems = document.querySelectorAll('.elevate-split-item');
+
+        splitItems.forEach(function(item) {
+            var caretBtn = item.querySelector('.elevate-caret-btn');
+            var dropdown = item.querySelector('.elevate-dropdown');
+            var isOpen = false;
+
+            function openDropdown() {
+                splitItems.forEach(function(other) {
+                    if (other !== item) closeItem(other);
+                });
+                dropdown.style.display = 'block';
+                item.classList.add('elevate-open');
+                isOpen = true;
+            }
+
+            function closeDropdown() {
+                dropdown.style.display = 'none';
+                item.classList.remove('elevate-open');
+                isOpen = false;
+            }
+
+            function closeItem(el) {
+                var d = el.querySelector('.elevate-dropdown');
+                if (d) d.style.display = 'none';
+                el.classList.remove('elevate-open');
+            }
+
+             
+            var hoverTimer;
+            item.addEventListener('mouseenter', function() {
+                clearTimeout(hoverTimer);
+                openDropdown();
+            });
+            item.addEventListener('mouseleave', function() {
+                hoverTimer = setTimeout(closeDropdown, 120);
+            });
+
+             
+            if (caretBtn) {
+                caretBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (isOpen) {
+                        closeDropdown();
+                    } else {
+                        openDropdown();
+                    }
+                });
+            }
+        });
+
+         
+        document.addEventListener('click', function(e) {
+            splitItems.forEach(function(item) {
+                if (!item.contains(e.target)) {
+                    var d = item.querySelector('.elevate-dropdown');
+                    if (d) d.style.display = 'none';
+                    item.classList.remove('elevate-open');
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initElevateNav);
+    } else {
+        initElevateNav();
+    }
+})();
+</script>
 
 
         
@@ -756,6 +823,7 @@
 </section>
 
 
+
         <section class="wrapper-alt" id="diagnostic" style="padding: 96px 0; background: #F3F1EC;">
     <div class="container">
         
@@ -959,6 +1027,7 @@ function calculateDiagnostic(e) {
 </script>
 
 
+
         <section class="wrapper" id="results" style="padding: 96px 0; background: var(--clr-bg);">
     <div class="container">
         
@@ -1103,6 +1172,7 @@ function calculateDiagnostic(e) {
 </section>
 
 
+
         <section class="wrapper-alt" id="tutors" style="padding: 90px 0; background: #F3F1EC;">
     <div class="container">
         <div class="heading text-center" style="margin-bottom: 56px;">
@@ -1218,6 +1288,7 @@ function calculateDiagnostic(e) {
         </div>
     </div>
 </section>
+
 
 
         
