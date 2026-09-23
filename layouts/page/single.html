@@ -1,38 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-
-  <head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-  </head>
-
-  <body>
-
-    <div id="all">
-        {{ partial "top.html" . }}
-
-        {{ partial "nav.html" . }}
-
-        <div id="content">
-            {{ if isset .Params "id" }}
-
-              {{ partial .Params.id . }}
-
-            {{ else }}
-
-            {{ .Content }}
-
-            {{ end }}
-        </div>
-        <!-- /#content -->
-
-        {{ partial "footer.html" . }}
-
-    </div>
-    <!-- /#all -->
-
-    {{ partial "scripts.html" . }}
-
-  </body>
-</html>
-
+{{ define "main" }}
+  <div class="elevate-page-content">
+    {{ if isset .Params "id" }}
+      {{ $partialID := .Params.id }}
+      {{ if not (strings.HasSuffix $partialID ".html") }}
+        {{ $partialID = printf "%s.html" $partialID }}
+      {{ end }}
+      {{ partial $partialID . }}
+    {{ else }}
+      <div class="container" style="padding-top: calc(var(--navbar-height) + 48px); padding-bottom: 80px;">
+        {{ .Content }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

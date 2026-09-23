@@ -1,60 +1,35 @@
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-
-            <!-- Column 1: Brand -->
-            <div class="col-md-5 col-sm-6" style="padding-right: 48px;">
-                <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
-                    <div style="width:36px;height:36px;background:#D97706;border-radius:8px;display:flex;align-items:center;justify-content:center;">
-                        <i class="fas fa-graduation-cap" style="color:#fff;font-size:16px;"></i>
-                    </div>
-                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#f9fafb;letter-spacing:-0.03em;">Elevate</span>
-                </div>
-                <p style="font-size:14px;line-height:1.8;color:#D1D5DB;max-width:300px;">
-                    Closing educational gaps and empowering students with personalized 1-on-1 tutoring, STEM mentorship, and test preparation.
-                </p>
-                <a href="{{ "get-tutored/" | relURL }}" class="footer-cta-btn">
-                    <i class="fas fa-graduation-cap"></i> Request a Tutor
-                </a>
-            </div>
-
-            <!-- Column 2: Links -->
-            <div class="col-md-3 col-sm-6">
-                <h4>Navigation</h4>
-                <ul class="list-unstyled" style="line-height: 2.1;">
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "" | relURL }}"> Home</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "about/" | relURL }}"> Purpose &amp; What We Do</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "get-tutored/" | relURL }}"> Get Tutored</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "join/" | relURL }}"> Join as a Tutor</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "portal/" | relURL }}"> Student Portal</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "faq/" | relURL }}"> FAQ</a></li>
-                    <li><i class="fas fa-angle-right" style="color:#D97706;font-size:11px;"></i><a href="{{ "contact/" | relURL }}"> Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Contact -->
-            <div class="col-md-4 col-sm-6">
-                <h4>Get in Touch</h4>
-                <p style="font-size:14px;line-height:2;color:#D1D5DB;">
-                    <i class="fas fa-map-marker-alt" style="color:#D97706;width:18px;"></i> Online Nationwide &amp; Local In-Person<br>
-                    <i class="fas fa-envelope" style="color:#D97706;width:18px;"></i> <a href="mailto:info@elevatetutoring.com">info@elevatetutoring.com</a><br>
-                    <i class="fas fa-clock" style="color:#D97706;width:18px;"></i> Mon - Sat, 8:00 AM - 9:00 PM
-                </p>
-                <div style="display:flex;gap:10px;margin-top:20px;">
-                    <a href="#" style="width:36px;height:36px;background:#0F3F22;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#FDFBF7;font-size:14px;transition:all .2s;" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" style="width:36px;height:36px;background:#0F3F22;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#FDFBF7;font-size:14px;transition:all .2s;" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:info@elevatetutoring.com" style="width:36px;height:36px;background:#0F3F22;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#FDFBF7;font-size:14px;transition:all .2s;" title="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-prompt" aria-hidden="true">&gt;_</span> {{ site.Title }}
         </div>
+        <p>{{ site.Params.footer.tagline | default site.Params.description }}</p>
+        <div class="elevate-footer-links">
+          <a href="{{ "about/" | relURL }}">About</a>
+          <a href="{{ "get-tutored/" | relURL }}">Programs</a>
+          <a href="{{ "resources/" | relURL }}">Free Resources</a>
+          <a href="{{ "faq/" | relURL }}">FAQ</a>
+          <a href="{{ "contact/" | relURL }}">Contact</a>
+          <a href="{{ "join/" | relURL }}">Join as a Tutor</a>
+        </div>
+      </div>
+      <div class="elevate-footer-right">
+        <div class="elevate-footer-cta">
+          <p><strong>Ready to get started?</strong></p>
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-primary">Request a Free Consultation &rarr;</a>
+        </div>
+        <div class="elevate-footer-contact">
+          <a href="mailto:info@elevatetutoring.com">info@elevatetutoring.com</a>
+        </div>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; {{- with site.Params.footer.since -}}
+        {{- if ne (int .) now.Year }}{{ int . }} - {{ end -}}
+      {{- end }}{{ now.Year }} {{ site.Params.footer.copyright | default site.Params.author.name }}. &nbsp;&middot;&nbsp;
+      <a href="{{ "portal/" | relURL }}" style="color:inherit;">Student Portal</a></p>
+    </div>
+  </div>
 </footer>
-
-<div id="copyright">
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <p>© 2026 Elevate Tutoring. Empowering Academic Success. All rights reserved.</p>
-        </div>
-    </div>
-</div>

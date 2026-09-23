@@ -1,157 +1,55 @@
 baseURL: "https://shreyasb609.github.io/website-2.0/"
-title: "Elevate Tutoring | Empowering Academic Success"
-theme: "hugo-universal-theme"
-languageCode: "en-us"
+title: "Elevate Tutoring"
+theme: "techly"
 defaultContentLanguage: "en"
 summaryLength: 70
 pluralizelisttitles: false
 
+locale: "en-us"
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
 menu:
   main:
-    - identifier: "menu.home"
-      name: "Home"
+    - name: "Home"
       url: "/"
       weight: 1
-    - identifier: "menu.about"
-      name: "Purpose & What We Do"
+    - name: "About"
       url: "/about/"
       weight: 2
-    - identifier: "menu.about.mission"
-      parent: "menu.about"
-      name: "Our Mission"
-      url: "/about/#mission"
-      weight: 1
-    - identifier: "menu.about.who"
-      parent: "menu.about"
-      name: "Who We Help"
-      url: "/#who-we-help"
-      weight: 2
-    - identifier: "menu.about.subjects"
-      parent: "menu.about"
-      name: "Subjects & Programs"
-      url: "/about/#subjects"
-      weight: 3
-    - identifier: "menu.about.process"
-      parent: "menu.about"
-      name: "4-Step Process"
-      url: "/about/#how-it-works"
-      weight: 4
-
-    - identifier: "menu.tutoring"
-      name: "Programs & Tutoring"
+    - name: "Programs"
       url: "/get-tutored/"
       weight: 3
-    - identifier: "menu.tutoring.request"
-      parent: "menu.tutoring"
-      name: "Request a Tutor"
-      url: "/get-tutored/"
-      weight: 1
-    - identifier: "menu.tutoring.programs"
-      parent: "menu.tutoring"
-      name: "Specialized Programs"
-      url: "/#programs"
-      weight: 2
-    - identifier: "menu.tutoring.guarantee"
-      parent: "menu.tutoring"
-      name: "100% Fit Guarantee"
-      url: "/faq/#faq3"
-      weight: 3
-    - identifier: "menu.tutoring.join"
-      parent: "menu.tutoring"
-      name: "Join as a Tutor"
-      url: "/join/"
-      weight: 4
-
-    - identifier: "menu.resources"
-      name: "Free Resources"
+    - name: "Free Resources"
       url: "/resources/"
       weight: 4
-
-    - identifier: "menu.faq"
-      name: "FAQ"
+    - name: "FAQ"
       url: "/faq/"
       weight: 5
-
-    - identifier: "menu.contact"
-      name: "Contact"
+    - name: "Contact"
       url: "/contact/"
       weight: 6
 
-  topbar:
-    - weight: 1
-      name: "Email"
-      url: "mailto:info@elevatetutoring.com"
-      pre: "<i class='fas fa-envelope'></i>"
-    - weight: 2
-      name: "Get Tutored"
-      url: "/get-tutored/"
-      pre: "<i class='fas fa-graduation-cap'></i>"
-
 params:
-  author: "Elevate Tutoring Team"
-  defaultDescription: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, test prep, and STEM mentorship."
+  author:
+    name: "Elevate Tutoring Team"
+  description: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, test prep, and STEM mentorship."
   defaultKeywords: ["tutoring", "STEM", "math", "calculus", "SAT prep", "ACT prep", "AP exams", "coding", "python", "mentorship"]
-  
-  # Style: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-  style: "blue"
+  mainSections: ["posts"]
+  indexHome: true
 
-  disabled_logo: false
-  logo_text: "Elevate"
-  logo: "img/logo.png"
-  logo_small: "img/logo-small.png"
-
-  contact_url: "/contact/"
-  address: |
-    <p class="text-uppercase"><strong>Elevate Tutoring</strong>
-      <br>Personalized Mentorship & Instruction
-      <br>Online & Local In-Person
-      <br><strong>United States</strong>
-    </p>
-
-  about_us: "<p>Elevate Tutoring connects dedicated students with expert educators for personalized 1-on-1 instruction, test prep, and STEM mentorship.</p>"
-  copyright: "© 2026 Elevate Tutoring. All rights reserved."
-
-  date_format: "January 2, 2006"
-  dropdown_mouse_over: false
-
-  # Top bar
-  topbar:
-    enable: true
-    text: '<p class="hidden-sm hidden-xs"><i class="fas fa-star" style="color:#a5b4fc;"></i>&nbsp; Free initial consultation &nbsp;·&nbsp; 100% Fit Guarantee &nbsp;·&nbsp; Results in 30 days or we re-match for free</p>'
-
-  # Homepage widgets
-  carouselHomepage:
-    enable: true
-    auto_play: true
-    slide_speed: 3000
-    pagination_speed: 1000
-
-  features:
-    enable: true
-    cols: 3
-
-  testimonials:
-    enable: true
-    title: "What Students & Parents Say"
-    subtitle: "Real stories and score breakthroughs from students and families who trust Elevate."
-
-  see_more:
-    enable: true
-    icon: "fas fa-graduation-cap"
-    title: "Ready to Elevate Your Academic Success?"
-    subtitle: "Get matched with your ideal tutor in under 24 hours. Free initial consultation."
-    link_url: "get-tutored/"
-    link_text: "Request a Tutor Today"
-
-  clients:
-    enable: false
-
-  recent_posts:
-    enable: false
+  banner:
+    heading: "Elevate Tutoring"
+    subheading: "Expert tutors, personalized plans, and proven results for K-12 math, sciences, test prep, coding, and beyond."
 
   footer:
-    recent_posts:
-      enable: false
+    tagline: "Personalized 1-on-1 mentorship for K-12, AP exams, SAT/ACT, and coding."
+    copyright: "Elevate Tutoring. All rights reserved."
+    since: 2024
+    showSocial: false
+
+  contact_url: "/contact/"
 
   enableGoogleMaps: false
   formspree_action: "https://formspree.io/f/YOUR_FORM_ID"
@@ -162,3 +60,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3

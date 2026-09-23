@@ -1,44 +1,236 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+{{ define "main" }}
+  {{- $sections := site.Params.mainSections | default (slice "posts") -}}
+  {{- $posts := where site.RegularPages "Section" "in" $sections -}}
 
-  <head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-  </head>
-
-  <body>
-
-    <div id="all">
-
-        {{ partial "top.html" . }}
-
-        {{ partial "nav.html" . }}
-
-        {{ partial "carousel.html" . }}
-
-        {{ partial "features.html" . }}
-
-        {{ partial "who_we_help.html" . }}
-
-        {{ partial "special_programs.html" . }}
-
-        {{ partial "diagnostic_quiz.html" . }}
-
-        {{ partial "case_studies.html" . }}
-
-        {{ partial "tutors_spotlight.html" . }}
-
-        {{ partial "testimonials.html" . }}
-
-        {{ partial "see_more.html" . }}
-
-        {{ partial "footer.html" . }}
-
+  {{/* Hero header */}}
+  <header class="elevate-hero">
+    <div class="container">
+      <div class="elevate-hero-badge">
+        <span class="logo-prompt" aria-hidden="true">&gt;_</span> Expert 1-on-1 Tutoring
+      </div>
+      <h1 class="elevate-hero-title">Unlock Your<br><span class="elevate-hero-accent">Academic Potential</span></h1>
+      <p class="elevate-hero-subtitle">
+        Expert tutors, personalized plans, and proven results for K-12 math, sciences, test prep, coding, and beyond.
+      </p>
+      <div class="elevate-hero-cta">
+        <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-primary">
+          Request a Tutor &rarr;
+        </a>
+        <a href="{{ "about/" | relURL }}" class="elevate-btn elevate-btn-outline">
+          Learn More
+        </a>
+      </div>
+      <div class="elevate-hero-stats">
+        <div class="elevate-stat">
+          <span class="elevate-stat-num">500+</span>
+          <span class="elevate-stat-label">Students Served</span>
+        </div>
+        <div class="elevate-stat">
+          <span class="elevate-stat-num">95%</span>
+          <span class="elevate-stat-label">Grade Improvement</span>
+        </div>
+        <div class="elevate-stat">
+          <span class="elevate-stat-num">4.9&#9733;</span>
+          <span class="elevate-stat-label">Average Rating</span>
+        </div>
+        <div class="elevate-stat">
+          <span class="elevate-stat-num">24h</span>
+          <span class="elevate-stat-label">Match Time</span>
+        </div>
+      </div>
     </div>
-    <!-- /#all -->
+  </header>
 
-    {{ partial "scripts.html" . }}
+  {{/* Services section */}}
+  <section class="elevate-services">
+    <div class="container">
+      <div class="elevate-section-header">
+        <span class="elevate-section-tag">What We Teach</span>
+        <h2 class="elevate-section-title">Comprehensive Academic Programs</h2>
+        <p class="elevate-section-sub">From foundational math to AP exams and college essays, we cover every milestone.</p>
+      </div>
+      <div class="elevate-services-grid">
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&#8730;</div>
+          <h3>K-12 Mathematics</h3>
+          <p>Algebra, Geometry, Precalculus, AP Calculus AB/BC, and Multivariable Calculus.</p>
+        </div>
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&#9883;</div>
+          <h3>Sciences &amp; AP Courses</h3>
+          <p>AP Physics 1/2/C, AP Chemistry, AP Biology, and Environmental Science.</p>
+        </div>
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&#9998;</div>
+          <h3>SAT / ACT Test Prep</h3>
+          <p>Digital SAT module strategy, Desmos shortcuts, ACT timing, and full proctored mocks.</p>
+        </div>
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&lt;/&gt;</div>
+          <h3>Computer Science &amp; Coding</h3>
+          <p>Python, Java, AP CSA, data structures, and USACO competition prep.</p>
+        </div>
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&#9998;</div>
+          <h3>College Admissions</h3>
+          <p>Common App essay coaching, supplement strategy, and STEM portfolio mentorship.</p>
+        </div>
+        <div class="elevate-service-card">
+          <div class="elevate-service-icon">&#9733;</div>
+          <h3>Executive Function</h3>
+          <p>Study habits, organization, time management, and test anxiety strategies.</p>
+        </div>
+      </div>
+      <div class="elevate-services-cta">
+        <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-primary">See All Programs &rarr;</a>
+      </div>
+    </div>
+  </section>
 
-  </body>
-</html>
+  {{/* Why Elevate */}}
+  <section class="elevate-why">
+    <div class="container">
+      <div class="elevate-why-grid">
+        <div class="elevate-why-left">
+          <span class="elevate-section-tag">Why Elevate</span>
+          <h2 class="elevate-section-title">Academic mentorship,<br>made personal.</h2>
+          <p>We pair each student with an expert educator who understands not just the subject, but the way that specific student learns best.</p>
+          <ul class="elevate-why-list">
+            <li><span class="elevate-check">&#10003;</span> <strong>Expert Subject Mentors</strong> from Stanford, MIT, UC Berkeley, and Harvard</li>
+            <li><span class="elevate-check">&#10003;</span> <strong>All Academic Levels</strong> from elementary through college-bound</li>
+            <li><span class="elevate-check">&#10003;</span> <strong>Transparent Progress</strong> with session logs and milestone tracking</li>
+            <li><span class="elevate-check">&#10003;</span> <strong>100% Fit Guarantee</strong> - we re-match at no charge if needed</li>
+          </ul>
+          <a href="{{ "about/" | relURL }}" class="elevate-btn elevate-btn-primary" style="margin-top:24px;">Our Story &rarr;</a>
+        </div>
+        <div class="elevate-why-right">
+          <div class="elevate-process-steps">
+            <div class="elevate-step">
+              <div class="elevate-step-num">01</div>
+              <div>
+                <strong>Free Consultation</strong>
+                <p>We assess your goals, curriculum, and learning style at no cost.</p>
+              </div>
+            </div>
+            <div class="elevate-step">
+              <div class="elevate-step-num">02</div>
+              <div>
+                <strong>Custom Tutor Match</strong>
+                <p>Paired with the right expert within 24 hours.</p>
+              </div>
+            </div>
+            <div class="elevate-step">
+              <div class="elevate-step-num">03</div>
+              <div>
+                <strong>Targeted Sessions</strong>
+                <p>1-on-1 instruction built around your exact syllabus.</p>
+              </div>
+            </div>
+            <div class="elevate-step">
+              <div class="elevate-step-num">04</div>
+              <div>
+                <strong>Progress Reports</strong>
+                <p>Transparent session logs sent to students and parents.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  {{/* Score Breakthroughs */}}
+  <section class="elevate-results">
+    <div class="container">
+      <div class="elevate-section-header">
+        <span class="elevate-section-tag">Proven Results</span>
+        <h2 class="elevate-section-title">Student Score Breakthroughs</h2>
+        <p class="elevate-section-sub">Real students, measurable progress.</p>
+      </div>
+      <div class="elevate-results-grid">
+        <div class="elevate-result-card elevate-result-green">
+          <div class="elevate-result-badge">+170 Points</div>
+          <div class="elevate-result-subject">SAT Math</div>
+          <div class="elevate-result-scores"><span class="score-before">610</span><span class="score-arrow">&rarr;</span><span class="score-after">780</span></div>
+          <p class="elevate-result-quote">"Marcus helped me identify weak spots in advanced geometry within 2 sessions."</p>
+          <div class="elevate-result-student">Marcus T. &middot; Junior &middot; 7 Weeks</div>
+        </div>
+        <div class="elevate-result-card elevate-result-amber">
+          <div class="elevate-result-badge">C+ to 5 on AP</div>
+          <div class="elevate-result-subject">AP Chemistry</div>
+          <div class="elevate-result-scores"><span class="score-before">C+ (78%)</span><span class="score-arrow">&rarr;</span><span class="score-after">5/5</span></div>
+          <p class="elevate-result-quote">"David explained foundational principles visually. I finished with an A."</p>
+          <div class="elevate-result-student">Elena R. &middot; Sophomore</div>
+        </div>
+        <div class="elevate-result-card elevate-result-green">
+          <div class="elevate-result-badge">UCLA Admitted</div>
+          <div class="elevate-result-subject">AP Calc BC &amp; CS</div>
+          <div class="elevate-result-scores"><span class="score-after">Score: 5</span><span class="score-arrow">+</span><span class="score-after">UCLA CS</span></div>
+          <p class="elevate-result-quote">"Sarah's BC tutoring gave me a massive edge and opened doors to top programs."</p>
+          <div class="elevate-result-student">Jason K. &middot; Senior</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Meet Our Tutors */}}
+  <section class="elevate-tutors">
+    <div class="container">
+      <div class="elevate-section-header">
+        <span class="elevate-section-tag">Elite Mentorship</span>
+        <h2 class="elevate-section-title">Meet Our Expert Tutors</h2>
+        <p class="elevate-section-sub">Hand-selected for subject mastery, patience, and proven results.</p>
+      </div>
+      <div class="elevate-tutors-grid">
+        <div class="elevate-tutor-card">
+          <div class="elevate-tutor-avatar" style="background:var(--elevate-green-lt);color:var(--elevate-green);">SL</div>
+          <h4>Dr. Sarah Lin</h4>
+          <div class="elevate-tutor-school">Stanford University, Ph.D.</div>
+          <div class="elevate-tutor-rating">&#9733; 4.98 (90+ sessions)</div>
+          <p>AP Calculus AB/BC, Multivariable Calculus, and Linear Algebra.</p>
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-sm">Match with Sarah</a>
+        </div>
+        <div class="elevate-tutor-card">
+          <div class="elevate-tutor-avatar" style="background:var(--elevate-amber-lt);color:var(--elevate-amber);">MV</div>
+          <h4>Marcus Vance</h4>
+          <div class="elevate-tutor-school">UC Berkeley, B.S. Engineering</div>
+          <div class="elevate-tutor-rating">&#9733; 4.95 (120+ sessions)</div>
+          <p>AP Physics 1/2/C and Digital SAT Math expert.</p>
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-sm">Match with Marcus</a>
+        </div>
+        <div class="elevate-tutor-card">
+          <div class="elevate-tutor-avatar" style="background:var(--elevate-green-lt);color:var(--elevate-green);">MP</div>
+          <h4>Maya Patel</h4>
+          <div class="elevate-tutor-school">MIT, B.S. Computer Science</div>
+          <div class="elevate-tutor-rating">&#9733; 4.96 (85+ sessions)</div>
+          <p>USACO Silver competitor and AP Computer Science A coach.</p>
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-sm">Match with Maya</a>
+        </div>
+        <div class="elevate-tutor-card">
+          <div class="elevate-tutor-avatar" style="background:var(--elevate-amber-lt);color:var(--elevate-amber);">DK</div>
+          <h4>David Kim</h4>
+          <div class="elevate-tutor-school">Harvard, B.A. Biochemistry</div>
+          <div class="elevate-tutor-rating">&#9733; 4.97 (110+ sessions)</div>
+          <p>AP Chemistry, AP Biology, and College Essay advisor.</p>
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-sm">Match with David</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Final CTA */}}
+  <section class="elevate-cta-section">
+    <div class="container">
+      <div class="elevate-cta-box">
+        <span class="logo-prompt" aria-hidden="true">&gt;_</span>
+        <h2>Ready to Elevate Your Academic Success?</h2>
+        <p>Get matched with your ideal tutor in under 24 hours. Free initial consultation, 100% Fit Guarantee.</p>
+        <div class="elevate-cta-btns">
+          <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-primary">Request a Tutor Today &rarr;</a>
+          <a href="{{ "contact/" | relURL }}" class="elevate-btn elevate-btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}
