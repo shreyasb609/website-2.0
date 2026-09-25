@@ -22,7 +22,7 @@ type: "page"
 <a href="mailto:info@elevatetutoring.com" class="btn btn-template-main btn-lg">
 <i class="fas fa-envelope"></i> Email Us Directly
 </a>
-<a href="{{ "get-tutored/" | relURL }}" class="btn btn-lg" style="background:#F3F1EC;color:#44403C;border:1px solid #EAE4D9;">
+<a href="/website-2.0/get-tutored/" class="btn btn-lg" style="background:#F3F1EC;color:#44403C;border:1px solid #EAE4D9;">
 Request a Tutor
 </a>
 </div>
