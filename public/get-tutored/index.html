@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+<head><script src="/website-2.0/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=website-2.0/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Get Tutored | Elevate Tutoring</title>
+<link rel="icon" href="/website-2.0/img/favicon.ico">
 
-<link rel="icon" type="image/svg+xml" href="/website-2.0/favicon.svg">
-<link rel="icon" type="image/png" href="/website-2.0/favicon.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW37hKBXY0PSPEOPpF9RO+/gqI4LQq/1F5sN2KZUCIfmVnF2K1kCPT0V2W3PdOEw8T6Kw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
@@ -14,8 +13,8 @@
   <meta name="description" content="Request a personalized 1-on-1 tutor. Free initial consultation with rapid 24-hour matching.">
   <meta name="robots" content="noindex">
 
-        <link rel="stylesheet" href="/website-2.0/css/main.65b2a96987a5aa3578bbcdaf554e4ed836ef12b3a020e7570f4a9c846fa51db2.css" integrity="sha256-ZbKpaYelqjV4u82vVU5O2DbvErOgIOdXD0qchG&#43;lHbI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/website-2.0/css/custom.8925e9808c9ad73b8ac2ea878778e5920a99ddac5f3a7d0571d1307371dd4177.css" integrity="sha256-iSXpgIya1zuKwuqHh3jlkgqZ3axfOn0FcdEwc3HdQXc=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/website-2.0/css/main.css">
+      <link rel="stylesheet" href="/website-2.0/css/custom.css">
 
 </head>
 <body>
@@ -29,7 +28,7 @@
       </a>
     </div>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu">
 
     <label for="nav-toggle" class="nav-hamburger">
       <span class="visually-hidden">Toggle navigation menu</span>
@@ -42,8 +41,8 @@
       <div class="nav-menu">
     <a class="nav-link" href="/website-2.0/">Home</a>
     <a class="nav-link" href="/website-2.0/about/">About</a>
-    <a class="nav-link" href="/website-2.0/get-tutored/">Programs</a>
-    <a class="nav-link" href="/website-2.0/resources/">Free Resources</a>
+    <a class="nav-link" href="/website-2.0/about/#subjects">Programs</a>
+    <a class="nav-link" href="/website-2.0/resources/">Study Topics</a>
     <a class="nav-link" href="/website-2.0/faq/">FAQ</a>
     <a class="nav-link" href="/website-2.0/contact/">Contact</a>
 
@@ -59,7 +58,7 @@
     
   <div class="elevate-page-content">
     
-      <div class="container" style="padding-top: calc(var(--navbar-height) + 48px); padding-bottom: 80px;">
+      <div class="page-body">
         <div class="page-hero">
 <div class="container">
 <div class="badge-pill-accent">Free Consultation</div>
@@ -73,8 +72,16 @@
 <div class="col-md-7">
 <div class="box">
 <h3 style="margin-bottom:6px;">Student Intake Form</h3>
-<p style="margin-bottom:28px;">Fill out the form below and our academic team will reach out within <strong>24 hours</strong>.</p>
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<p style="margin-bottom:28px;">Share your goals with our academic team. We aim to respond within <strong>24 hours</strong>.</p>
+
+
+
+<div class="inquiry-unavailable" role="note">
+<p>Online submissions are not available yet. Please email us to request a tutor.</p>
+<a class="btn btn-template-main" href="mailto:info@elevatetutoring.com">Email Elevate Tutoring</a>
+</div>
+<form><fieldset disabled hidden>
+
 <div class="row">
 <div class="col-sm-6">
 <div class="form-group">
@@ -94,6 +101,7 @@
 <div class="form-group">
 <label for="grade_level">Grade Level</label>
 <select class="form-control" id="grade_level" name="grade_level">
+<option>Elementary School (Grades K-5)</option>
 <option>Middle School (Grades 6-8)</option>
 <option selected>High School (Grades 9-12)</option>
 <option>College / University</option>
@@ -124,10 +132,12 @@
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-paper-plane"></i> Submit Tutor Request
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">
+<p style="text-align:center;margin-top:12px;font-size:13px;color:var(--text-muted);">
 <i class="fas fa-lock" style="font-size:11px;"></i> No commitment required. We respect your privacy.
 </p>
 </div>
+
+</fieldset>
 </form>
 </div>
 </div>
@@ -136,21 +146,21 @@
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">1</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">We review your request</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">We review your request</strong>
 <p style="font-size:13.5px;margin:0;">Our team reviews your goals and identifies top-matched tutors within hours.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">2</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Free consultation call</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">Free consultation call</strong>
 <p style="font-size:13.5px;margin:0;">We schedule a free 20-minute intro call with your matched tutor.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:40px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">3</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Start your first session</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">Start your first session</strong>
 <p style="font-size:13.5px;margin:0;">Begin personalized instruction, fully customized to your pace and goals.</p>
 </div>
 </div>
@@ -160,11 +170,11 @@
 </div>
 <p style="font-size:13.5px;color:#15803D;margin:0;line-height:1.65;">If you are not satisfied with your first tutor, we will rematch you for free and credit your session.</p>
 </div>
-<div style="margin-top:20px;background:#f9fafb;border:1px solid #EAE4D9;border-radius:10px;padding:20px;">
-<div style="font-size:13px;font-weight:700;color:#44403C;margin-bottom:6px;">
+<div style="margin-top:20px;background:var(--bg-secondary);border:1px solid var(--border-primary);border-radius:10px;padding:20px;">
+<div style="font-size:13px;font-weight:700;color:var(--text-secondary);margin-bottom:6px;">
 <i class="fas fa-video" style="color:#15803D;"></i> Online sessions include:
 </div>
-<ul style="padding-left:18px;margin:0;font-size:13px;color:#78716C;line-height:2;">
+<ul style="padding-left:18px;margin:0;font-size:13px;color:var(--text-muted);line-height:2;">
 <li>HD video call with shared whiteboard</li>
 <li>Real-time screen sharing</li>
 <li>Recorded lesson archives</li>
@@ -190,8 +200,8 @@
         <p>Personalized 1-on-1 mentorship for K-12, AP exams, SAT/ACT, and coding.</p>
         <div class="elevate-footer-links">
           <a href="/website-2.0/about/">About</a>
-          <a href="/website-2.0/get-tutored/">Programs</a>
-          <a href="/website-2.0/resources/">Free Resources</a>
+          <a href="/website-2.0/about/#subjects">Programs</a>
+          <a href="/website-2.0/resources/">Study Topics</a>
           <a href="/website-2.0/faq/">FAQ</a>
           <a href="/website-2.0/contact/">Contact</a>
           <a href="/website-2.0/join/">Join as a Tutor</a>
@@ -208,14 +218,14 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy;2024 - 2026 Elevate Tutoring. All rights reserved.. &nbsp;&middot;&nbsp;
+      <p>&copy;2024 - 2026 Elevate Tutoring. All rights reserved. &nbsp;&middot;&nbsp;
       <a href="/website-2.0/portal/" style="color:inherit;">Student Portal</a></p>
     </div>
   </div>
 </footer>
 
   
-          <script src="/website-2.0/js/main.fa981a560cdf0ee7887917723d380e71ce06f90e70f56f58480faf9d23bede8b.js" integrity="sha256-&#43;pgaVgzfDueIeRdyPTgOcc4G&#43;Q5w9W9YSA&#43;vnSO&#43;3os=" crossorigin="anonymous" defer></script>
-          <script src="/website-2.0/js/code-copy.d0d30d092745efba65b413f95b7d427f2d4724979259cc3c16753cfe098e1d3e.js" integrity="sha256-0NMNCSdF77pltBP5W31Cfy1HJJeSWcw8FnU8/gmOHT4=" crossorigin="anonymous" defer></script>
+        <script src="/website-2.0/js/main.js" defer></script>
+        <script src="/website-2.0/js/code-copy.js" defer></script>
 </body>
 </html>
