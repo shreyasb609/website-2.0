@@ -175,24 +175,24 @@
   <!-- PORTAL NAVIGATION TABS -->
   <ul class="nav nav-tabs" style="border-bottom: 2px solid #EAE4D9; margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px;">
     <li class="active" id="tab-nav-progress">
-      <a href="javascript:void(0)" onclick="showPortalTab('progress')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+      <button type="button" onclick="showPortalTab('progress')" class="portal-tab-btn" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0; border: none; cursor: pointer; background: transparent;">
         <i class="fas fa-chart-line" style="color:#D97706;"></i> Progress Tracking
-      </a>
+      </button>
     </li>
     <li id="tab-nav-tutors">
-      <a href="javascript:void(0)" onclick="showPortalTab('tutors')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+      <button type="button" onclick="showPortalTab('tutors')" class="portal-tab-btn" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0; border: none; cursor: pointer; background: transparent;">
         <i class="fas fa-user-friends" style="color:#15803D;"></i> My Tutor Matches
-      </a>
+      </button>
     </li>
     <li id="tab-nav-schedule">
-      <a href="javascript:void(0)" onclick="showPortalTab('schedule')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+      <button type="button" onclick="showPortalTab('schedule')" class="portal-tab-btn" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0; border: none; cursor: pointer; background: transparent;">
         <i class="fas fa-calendar-alt" style="color:#D97706;"></i> Schedule &amp; Reminders
-      </a>
+      </button>
     </li>
     <li id="tab-nav-resources">
-      <a href="javascript:void(0)" onclick="showPortalTab('resources')" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0;">
+      <button type="button" onclick="showPortalTab('resources')" class="portal-tab-btn" style="font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 8px 8px 0 0; border: none; cursor: pointer; background: transparent;">
         <i class="fas fa-folder-open" style="color:#15803D;"></i> Session Notes &amp; Practice
-      </a>
+      </button>
     </li>
   </ul>
 
@@ -450,15 +450,15 @@
           <ul class="list-unstyled" style="margin: 0; line-height: 2.2; font-size: 14.5px;">
             <li style="border-bottom: 1px solid #EAE4D9; padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
               <span><i class="fas fa-file-alt" style="color:#15803D;"></i> Calculus_Derivatives_Notes_Sept20.pdf</span>
-              <a href="javascript:alert('Downloading session whiteboard notes PDF...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+              <a href="{{ "resources/" | relURL }}" class="btn" style="padding: 4px 10px; font-size: 12px; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-primary);">View</a>
             </li>
             <li style="border-bottom: 1px solid #EAE4D9; padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
               <span><i class="fas fa-file-alt" style="color:#15803D;"></i> Physics_Kinematics_ProblemSet3.pdf</span>
-              <a href="javascript:alert('Downloading practice problem set PDF...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+              <a href="{{ "resources/" | relURL }}" class="btn" style="padding: 4px 10px; font-size: 12px; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-primary);">View</a>
             </li>
             <li style="padding: 8px 0; display: flex; justify-content: space-between; align-items: center;">
               <span><i class="fas fa-file-alt" style="color:#15803D;"></i> SAT_Math_Formula_CheatSheet.pdf</span>
-              <a href="javascript:alert('Downloading SAT cheat sheet...')" class="btn" style="padding: 4px 10px; font-size: 12px; background: #F3F1EC; color: #44403C; border: 1px solid #EAE4D9;">Download</a>
+              <a href="{{ "resources/" | relURL }}" class="btn" style="padding: 4px 10px; font-size: 12px; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-primary);">View</a>
             </li>
           </ul>
         </div>

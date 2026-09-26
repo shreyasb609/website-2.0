@@ -160,16 +160,16 @@
 </div>
 
 <!-- Modal Structure for Resource Preview -->
-<div id="resourceModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="resourceModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="margin-top: 80px;">
+<div id="resourceModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="resourceModalLabel" aria-hidden="true" style="display: none; position: fixed; inset: 0; z-index: 1050; background: rgba(0,0,0,0.5); align-items: center; justify-content: center;">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="margin-top: 80px; max-width: 540px; width: 100%; margin-left: auto; margin-right: auto; padding: 0 16px;">
         <div class="modal-content" style="border-radius: 12px; border: 1px solid var(--border-primary); background: var(--bg-primary); box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-            <div class="modal-header" style="background: var(--elevate-green-dk); color: #ffffff; border-top-left-radius: 12px; border-top-right-radius: 12px; padding: 20px 24px;">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ffffff; opacity: 0.8; text-shadow: none; font-size: 24px; background: none; border: none; cursor: pointer;">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="modal-header" style="background: var(--elevate-green-dk); color: #ffffff; border-top-left-radius: 12px; border-top-right-radius: 12px; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between;">
                 <h4 class="modal-title" id="resourceModalLabel" style="font-weight: 700; color: #ffffff; margin: 0; font-family: var(--font-display);">
                     Resource Preview
                 </h4>
+                <button type="button" onclick="closeResourceModal()" aria-label="Close" style="color: #ffffff; opacity: 0.8; font-size: 24px; background: none; border: none; cursor: pointer; line-height: 1;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body" style="padding: 28px 24px;">
                 <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -204,6 +204,17 @@
 function openResourceModal(title, topics) {
     document.getElementById('modalResourceTitle').innerText = title;
     document.getElementById('modalResourceTopics').innerText = topics;
-    $('#resourceModal').modal('show');
+    var modal = document.getElementById('resourceModal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
 }
+function closeResourceModal() {
+    var modal = document.getElementById('resourceModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+// Close on backdrop click
+document.getElementById('resourceModal').addEventListener('click', function(e) {
+    if (e.target === this) closeResourceModal();
+});
 </script>
