@@ -46,7 +46,7 @@ type: "page"
 <div class="box">
 <h3 style="margin-bottom:6px;">Tutor Application Form</h3>
 <p style="margin-bottom:28px;">Applications are reviewed on a rolling basis. We will be in touch within 2-3 business days.</p>
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+{{< inquiry-start "apply as a tutor" >}}
 <div class="row">
 <div class="col-sm-6">
 <div class="form-group">
@@ -92,30 +92,30 @@ type: "page"
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-user-plus"></i> Submit Application
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">We review all applications carefully and respond within 2-3 business days.</p>
+<p style="text-align:center;margin-top:12px;font-size:13px;color:var(--text-muted);">We review all applications carefully and respond within 2-3 business days.</p>
 </div>
-</form>
+{{< inquiry-end >}}
 </div>
 </div>
 
 <div class="col-md-4 col-md-offset-1">
 <h4 style="margin-bottom:20px;">Who we're looking for</h4>
 <ul style="list-style:none;padding:0;margin:0 0 32px;">
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,var(--border-primary));">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#44403C;line-height:1.6;">Strong academic background (GPA 3.5+) or equivalent expertise</span>
+<span style="font-size:14px;color:var(--text-secondary);line-height:1.6;">Strong academic background (GPA 3.5+) or equivalent expertise</span>
 </li>
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,var(--border-primary));">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#44403C;line-height:1.6;">University students, recent graduates, or credentialed teachers</span>
+<span style="font-size:14px;color:var(--text-secondary);line-height:1.6;">University students, recent graduates, or credentialed teachers</span>
 </li>
-<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,#EAE4D9);">
+<li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,var(--border-primary));">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#44403C;line-height:1.6;">Patience, reliability, and a genuine passion for helping others</span>
+<span style="font-size:14px;color:var(--text-secondary);line-height:1.6;">Patience, reliability, and a genuine passion for helping others</span>
 </li>
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;">
 <i class="fas fa-check-circle" style="color:#15803D;font-size:16px;flex-shrink:0;margin-top:2px;"></i>
-<span style="font-size:14px;color:#44403C;line-height:1.6;">Availability for at least 5 hours per week</span>
+<span style="font-size:14px;color:var(--text-secondary);line-height:1.6;">Availability for at least 5 hours per week</span>
 </li>
 </ul>
 <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:22px 20px;">

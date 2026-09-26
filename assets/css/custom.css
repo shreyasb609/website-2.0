@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 /* ==========================================================================
    Elevate Tutoring - Master Theme & Custom CSS Overlay
    Provides full color contrast, alignment fixes, dark mode, & legacy aliases.
@@ -20,8 +21,8 @@
   --elevate-muted:      #78716C;
 
   /* Primary Button Variables */
-  --btn-primary-bg:     #D97706;
-  --btn-primary-hover:  #B45309;
+  --btn-primary-bg:     #B45309;
+  --btn-primary-hover:  #92400E;
   --btn-primary-text:   #FFFFFF;
 
   /* Techly Theme Overrides */
@@ -72,8 +73,8 @@
     --elevate-amber-dk: #F59E0B;
     --elevate-amber-lt: #3B2404;
 
-    --btn-primary-bg:     #D97706;
-    --btn-primary-hover:  #B45309;
+    --btn-primary-bg:     #B45309;
+    --btn-primary-hover:  #92400E;
     --btn-primary-text:   #FFFFFF;
 
     --accent-primary:   #FBBF24;
@@ -108,7 +109,7 @@
 }
 
 /* -- 3. Base Styles & Google Fonts ------------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 
 body {
   font-family: var(--font-sans);
@@ -147,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.2s ease;
   cursor: pointer;
   border: 2px solid transparent;
-  white-space: nowrap;
+  white-space: normal;
   vertical-align: middle;
   box-sizing: border-box;
 }
@@ -328,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 /* -- 8. Hero Section ------------------------------------------------- */
 .elevate-hero {
   padding: calc(var(--navbar-height) + 80px) 0 80px;
-  background: linear-gradient(135deg, var(--elevate-green-dk) 0%, #064E3B 100%);
+  background: linear-gradient(135deg, #14532D 0%, #064E3B 100%);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -765,12 +766,12 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 60vh;
 }
 .elevate-page-content .container {
-  max-width: var(--content-max, 800px);
+  max-width: 1200px;
 }
 
 .page-hero {
   padding: calc(var(--navbar-height) + 56px) 0 56px;
-  background: linear-gradient(135deg, var(--elevate-green-dk) 0%, #064E3B 100%);
+  background: linear-gradient(135deg, #14532D 0%, #064E3B 100%);
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 0;
@@ -944,4 +945,78 @@ h1, h2, h3, h4, h5, h6 {
   .elevate-cta-box       { padding: 40px 24px; }
   .elevate-footer-right  { align-items: flex-start; }
   .elevate-hero-stats    { gap: 24px; }
+}
+
+/* Shared page rhythm and accessible controls. */
+:root { --navbar-height: 76px; --text-muted: #6B635E; }
+@media (prefers-color-scheme: dark) { :root { --text-muted: #A6AFBA; } }
+body { overflow-x: visible; }
+.container { width: 100%; }
+h1, h2, h3, h4 { text-wrap: balance; }
+.page-body p + p { margin-top: 16px; }
+.page-body h2, .page-body h3, .page-body h4 { margin-bottom: 16px; line-height: 1.3; }
+.row { row-gap: 28px; }
+[class*="col-"], .elevate-why-grid > *, .footer-main > * { min-width: 0; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: 700; margin-bottom: 8px; }
+.form-control { display: block; width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid var(--border-secondary); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font: inherit; }
+textarea.form-control { resize: vertical; }
+.form-control::placeholder { color: var(--text-muted); opacity: 1; }
+:where(input, select, textarea, summary):focus-visible { outline: 3px solid var(--accent-secondary); outline-offset: 3px; }
+.nav-toggle:focus-visible + .nav-hamburger { outline: 3px solid var(--accent-secondary); outline-offset: 3px; }
+.btn, .elevate-btn { min-height: 44px; text-align: center; max-width: 100%; }
+.btn-template-transparent-primary:hover { background: #14532D !important; border-color: #14532D !important; }
+.elevate-why-list li { display: grid; grid-template-columns: 22px 1fr; }
+.elevate-why-list li > .elevate-check { grid-column: 1; }
+.elevate-check { background: #15803D; }
+.footer-brand { flex: 1 1 420px; }
+.elevate-footer-right { flex: 0 1 360px; }
+.elevate-footer-cta p { margin-bottom: 12px; }
+.elevate-footer-contact a { overflow-wrap: anywhere; }
+.faq-item { border: 1px solid var(--border-primary); border-radius: 12px; background: var(--bg-secondary); margin-bottom: 16px; scroll-margin-top: 100px; }
+.faq-item summary { padding: 22px 24px; cursor: pointer; font-weight: 700; color: var(--text-primary); }
+.faq-item[open] summary { border-bottom: 1px solid var(--border-primary); }
+.faq-answer { padding: 22px 24px; }
+.inquiry-unavailable { padding: 24px; background: var(--bg-primary); border: 1px solid var(--border-primary); border-radius: 10px; }
+.inquiry-unavailable p { margin-bottom: 20px; }
+[hidden] { display: none !important; }
+.modal { padding: 24px 0; overflow-y: auto; }
+.modal-dialog { margin-top: 0 !important; max-height: calc(100dvh - 48px); overflow-y: auto; }
+.modal-header { background: #14532D !important; }
+@media (max-width: 1050px) {
+  .nav-hamburger { display: flex; }
+  .nav-toggle { display: block; }
+  .nav-collapse { display: none; width: 100%; flex-basis: 100%; padding: 12px 0; max-height: calc(100dvh - 90px); overflow-y: auto; }
+  .nav-toggle:checked ~ .nav-collapse { display: block; }
+  .nav-menu { flex-direction: column; align-items: stretch; gap: 4px; }
+  .nav-menu .nav-link { padding: 10px 0; }
+  .elevate-nav-cta { margin: 8px 0 0; }
+}
+@media (max-width: 768px) {
+  .container { padding-inline: 20px; }
+  .elevate-services, .elevate-why, .elevate-results, .elevate-tutors, .main-content { padding-block: 56px; }
+  .elevate-section-header { margin-bottom: 32px; }
+  .elevate-why-grid { gap: 32px; }
+  .elevate-hero-cta { margin-bottom: 36px; }
+  .page-hero { padding-top: calc(var(--navbar-height) + 40px); padding-bottom: 40px; }
+  .elevate-footer-right { flex-basis: 100%; }
+}
+@media (max-width: 420px) {
+  .nav-brand a { font-size: 16px; }
+  .box, .box-simple { padding: 24px 18px; }
+  .elevate-stat-box { padding: 20px 10px; }
+  .stat-number { font-size: 1.8rem; }
+  .stat-label { font-size: 11px; }
+  .elevate-hero-cta > a, .elevate-cta-btns > a { width: 100%; }
+  .elevate-result-scores { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+[id] { scroll-margin-top: 100px; }
+@media (max-width: 480px) {
+  .elevate-page-content .text-center > .btn { margin: 8px 0 !important; width: 100%; }
+  .modal-header { gap: 16px; }
 }

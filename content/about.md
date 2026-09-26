@@ -140,7 +140,7 @@ type: "page"
 </div>
 
 <div class="text-center">
-<a href="/website-2.0/get-tutored/" class="btn btn-template-main btn-lg">
+<a href="{{< site-url "get-tutored/" >}}" class="btn btn-template-main btn-lg">
 <i class="fas fa-graduation-cap"></i> Request a Tutor Today
 </a>
 </div>

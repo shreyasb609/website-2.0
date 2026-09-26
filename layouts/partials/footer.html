@@ -8,8 +8,8 @@
         <p>{{ site.Params.footer.tagline | default site.Params.description }}</p>
         <div class="elevate-footer-links">
           <a href="{{ "about/" | relURL }}">About</a>
-          <a href="{{ "get-tutored/" | relURL }}">Programs</a>
-          <a href="{{ "resources/" | relURL }}">Free Resources</a>
+          <a href="{{ "about/#subjects" | relURL }}">Programs</a>
+          <a href="{{ "resources/" | relURL }}">Study Topics</a>
           <a href="{{ "faq/" | relURL }}">FAQ</a>
           <a href="{{ "contact/" | relURL }}">Contact</a>
           <a href="{{ "join/" | relURL }}">Join as a Tutor</a>
@@ -28,7 +28,7 @@
     <div class="footer-bottom">
       <p>&copy; {{- with site.Params.footer.since -}}
         {{- if ne (int .) now.Year }}{{ int . }} - {{ end -}}
-      {{- end }}{{ now.Year }} {{ site.Params.footer.copyright | default site.Params.author.name }}. &nbsp;&middot;&nbsp;
+      {{- end }}{{ now.Year }} {{ site.Params.footer.copyright | default site.Params.author.name }} &nbsp;&middot;&nbsp;
       <a href="{{ "portal/" | relURL }}" style="color:inherit;">Student Portal</a></p>
     </div>
   </div>

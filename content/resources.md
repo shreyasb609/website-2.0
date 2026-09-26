@@ -1,7 +1,6 @@
----
-title: "Free Resources & Study Guides"
-description: "Download high-yield AP Calculus, Digital SAT, AP Physics, and Computer Science cheat sheets and formula guides."
+﻿---
+title: "Study Topics"
+description: "Explore tutoring topics in AP Calculus, SAT, AP Physics, and Computer Science."
 type: "page"
 id: "resources_page.html"
 ---
-

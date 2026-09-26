@@ -20,8 +20,8 @@ type: "page"
 <div class="col-md-7">
 <div class="box">
 <h3 style="margin-bottom:6px;">Student Intake Form</h3>
-<p style="margin-bottom:28px;">Fill out the form below and our academic team will reach out within <strong>24 hours</strong>.</p>
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<p style="margin-bottom:28px;">Share your goals with our academic team. We aim to respond within <strong>24 hours</strong>.</p>
+{{< inquiry-start "request a tutor" >}}
 <div class="row">
 <div class="col-sm-6">
 <div class="form-group">
@@ -41,6 +41,7 @@ type: "page"
 <div class="form-group">
 <label for="grade_level">Grade Level</label>
 <select class="form-control" id="grade_level" name="grade_level">
+<option>Elementary School (Grades K-5)</option>
 <option>Middle School (Grades 6-8)</option>
 <option selected>High School (Grades 9-12)</option>
 <option>College / University</option>
@@ -71,11 +72,11 @@ type: "page"
 <button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
 <i class="fas fa-paper-plane"></i> Submit Tutor Request
 </button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:#78716C;">
+<p style="text-align:center;margin-top:12px;font-size:13px;color:var(--text-muted);">
 <i class="fas fa-lock" style="font-size:11px;"></i> No commitment required. We respect your privacy.
 </p>
 </div>
-</form>
+{{< inquiry-end >}}
 </div>
 </div>
 
@@ -84,21 +85,21 @@ type: "page"
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">1</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">We review your request</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">We review your request</strong>
 <p style="font-size:13.5px;margin:0;">Our team reviews your goals and identifies top-matched tutors within hours.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:24px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">2</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Free consultation call</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">Free consultation call</strong>
 <p style="font-size:13.5px;margin:0;">We schedule a free 20-minute intro call with your matched tutor.</p>
 </div>
 </div>
 <div style="display:flex;gap:14px;margin-bottom:40px;align-items:flex-start;">
 <div class="step-number" style="flex-shrink:0;margin:0;">3</div>
 <div>
-<strong style="display:block;font-size:14px;color:#44403C;margin-bottom:4px;">Start your first session</strong>
+<strong style="display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px;">Start your first session</strong>
 <p style="font-size:13.5px;margin:0;">Begin personalized instruction, fully customized to your pace and goals.</p>
 </div>
 </div>
@@ -108,11 +109,11 @@ type: "page"
 </div>
 <p style="font-size:13.5px;color:#15803D;margin:0;line-height:1.65;">If you are not satisfied with your first tutor, we will rematch you for free and credit your session.</p>
 </div>
-<div style="margin-top:20px;background:#f9fafb;border:1px solid #EAE4D9;border-radius:10px;padding:20px;">
-<div style="font-size:13px;font-weight:700;color:#44403C;margin-bottom:6px;">
+<div style="margin-top:20px;background:var(--bg-secondary);border:1px solid var(--border-primary);border-radius:10px;padding:20px;">
+<div style="font-size:13px;font-weight:700;color:var(--text-secondary);margin-bottom:6px;">
 <i class="fas fa-video" style="color:#15803D;"></i> Online sessions include:
 </div>
-<ul style="padding-left:18px;margin:0;font-size:13px;color:#78716C;line-height:2;">
+<ul style="padding-left:18px;margin:0;font-size:13px;color:var(--text-muted);line-height:2;">
 <li>HD video call with shared whiteboard</li>
 <li>Real-time screen sharing</li>
 <li>Recorded lesson archives</li>

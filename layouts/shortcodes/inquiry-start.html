@@ -1,0 +1,11 @@
+{{ $action := site.Params.formspree_action | default "" }}
+{{ $ready := and $action (not (in $action "YOUR_FORM_ID")) }}
+{{ if $ready }}
+<form action="{{ $action }}" method="POST">
+{{ else }}
+<div class="inquiry-unavailable" role="note">
+<p>Online submissions are not available yet. Please email us to {{ .Get 0 }}.</p>
+<a class="btn btn-template-main" href="mailto:info@elevatetutoring.com">Email Elevate Tutoring</a>
+</div>
+<form><fieldset disabled hidden>
+{{ end }}

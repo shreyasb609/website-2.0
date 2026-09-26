@@ -1,0 +1,3 @@
+{{ $action := site.Params.formspree_action | default "" }}
+{{ if not (and $action (not (in $action "YOUR_FORM_ID"))) }}</fieldset>{{ end }}
+</form>

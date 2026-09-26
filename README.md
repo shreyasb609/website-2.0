@@ -1,27 +1,18 @@
-# Elevate Tutoring Website 2.0
+﻿# Elevate Tutoring Website
 
-Official website for **Elevate Tutoring**, built with [Hugo](https://gohugo.io/) and the [Hugo Universal Theme](https://github.com/devcows/hugo-universal-theme).
+Hugo website using the Techly theme and a site-level CSS overlay in `assets/css/custom.css`.
 
-## 📚 Pages & Structure
+Run `hugo server` for local development. Run `hugo --printPathWarnings` to build.
+The deployment base URL is configured in `hugo.yaml`; content links use the `site-url` shortcode so they also work at another base path.
 
-- **Home (`/`)**: Hero carousel, core feature highlights, testimonials, and call-to-action banner.
-- **Purpose & What We Do (`/about/`)**: Mission statement, academic program offerings (Math, Science, Test Prep, STEM & Coding, Humanities, Executive Function), and 4-step process.
-- **Get Tutored (`/get-tutored/`)**: Student intake request form, academic tracks, and FAQ.
-- **Join as a Tutor (`/join/`)**: Tutor benefits, qualifications, and educator application form.
-- **FAQ (`/faq/`)**: Collapsible accordion answering common questions about matching, sessions, and guarantee.
-- **Contact Us (`/contact/`)**: Direct contact form and inquiry details.
+## Site functionality
 
-## 🚀 Local Development
+- Home, About/programs, tutoring inquiries, tutor applications, FAQ, contact, study topic previews, and portal availability page.
+- FAQ uses native HTML disclosures. Topic previews support Escape, focus return, and keyboard focus containment.
+- Set `params.formspree_action` in `hugo.yaml` to a real Formspree endpoint to enable the intake and application forms. Until configured, both pages show an email contact option and hide/disable submission fields.
+- The portal is a coming-soon page. Authentication, session tracking, and reminders require a real backend; the previous browser-only simulation did not provide those services.
+- Resources currently contain topic overviews, not downloadable PDFs.
 
-To run the website locally:
+## Review limitations
 
-```bash
-hugo server
-```
-
-Open your browser at `http://localhost:1313/`.
-
-## 🌐 Deployment
-
-The site is configured for automatic continuous deployment to GitHub Pages via GitHub Actions (`.github/workflows/hugo.yml`).
-Live URL: [https://shreyasb609.github.io/website-2.0/](https://shreyasb609.github.io/website-2.0/)
+Business claims, testimonials, tutor affiliations, response times, and the contact mailbox require owner verification before publication. They were not independently verified during the formatting review.

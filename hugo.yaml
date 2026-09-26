@@ -19,9 +19,9 @@ menu:
       url: "/about/"
       weight: 2
     - name: "Programs"
-      url: "/get-tutored/"
+      url: "/about/#subjects"
       weight: 3
-    - name: "Free Resources"
+    - name: "Study Topics"
       url: "/resources/"
       weight: 4
     - name: "FAQ"
@@ -52,7 +52,7 @@ params:
   contact_url: "/contact/"
 
   enableGoogleMaps: false
-  formspree_action: "https://formspree.io/f/YOUR_FORM_ID"
+  formspree_action: ""
   contact_form_ajax: false
   enableRecaptchaInContactForm: false
 
