@@ -34,17 +34,17 @@ menu:
 params:
   author:
     name: "Elevate Tutoring Team"
-  description: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, test prep, and STEM mentorship."
-  defaultKeywords: ["tutoring", "STEM", "math", "calculus", "SAT prep", "ACT prep", "AP exams", "coding", "python", "mentorship"]
+  description: "Elevate is a premier tutoring service offering personalized 1-on-1 instruction, AP exam preparation, and STEM mentorship."
+  defaultKeywords: ["tutoring", "STEM", "math", "calculus", "AP exams", "coding", "python", "mentorship"]
   mainSections: ["posts"]
   indexHome: true
 
   banner:
     heading: "Elevate Tutoring"
-    subheading: "Expert tutors, personalized plans, and proven results for K-12 math, sciences, test prep, coding, and beyond."
+    subheading: "Expert tutors, personalized plans, and proven results for K-12 math, sciences, AP exam preparation, coding, and beyond."
 
   footer:
-    tagline: "Personalized 1-on-1 mentorship for K-12, AP exams, SAT/ACT, and coding."
+    tagline: "Personalized 1-on-1 mentorship for K-12 math and science, AP exams, and coding."
     copyright: "Elevate Tutoring. All rights reserved."
     since: 2024
     showSocial: false

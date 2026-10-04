@@ -82,7 +82,7 @@ type: "page"
 </div>
 <div class="form-group">
 <label for="subjects">Subjects You Can Teach *</label>
-<input type="text" class="form-control" id="subjects" name="subjects" placeholder="e.g. AP Physics, Calculus, Python, Data Science, SAT Math" required>
+<input type="text" class="form-control" id="subjects" name="subjects" placeholder="e.g. AP Physics, Calculus, Python, Data Science" required>
 </div>
 <div class="form-group">
 <label for="bio">Why do you want to join Elevate?</label>

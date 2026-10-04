@@ -70,28 +70,22 @@ type: "page"
 <div class="col-md-4 col-sm-6">
 <div class="box-simple">
 <div class="icon"><i class="fas fa-award"></i></div>
-<h3>Test Preparation</h3>
-<p>Strategy-first coaching for SAT, ACT, AP Exams, PSAT, and SSAT/ISEE admissions tests.</p>
+<h3>AP Exam Preparation</h3>
+<p>Focused preparation for AP math, science, and computer science exams, with practice questions and concept review.</p>
 </div>
 </div>
 </div>
 
 <div class="row row-flex" style="margin-top:24px;">
-<div class="col-md-4 col-sm-6">
+<div class="col-md-6">
 <div class="box-simple">
 <div class="icon"><i class="fas fa-laptop-code"></i></div>
 <h3>STEM &amp; Coding</h3>
 <p>Python, Java, Data Structures, Object-Oriented Programming, and introductory college computer science.</p>
 </div>
 </div>
-<div class="col-md-4 col-sm-6">
-<div class="box-simple">
-<div class="icon"><i class="fas fa-pen-nib"></i></div>
-<h3>Humanities &amp; Writing</h3>
-<p>English Literature, college admissions essays, academic research, and history.</p>
-</div>
-</div>
-<div class="col-md-4 col-sm-6">
+
+<div class="col-md-6">
 <div class="box-simple">
 <div class="icon"><i class="fas fa-brain"></i></div>
 <h3>Executive Function</h3>

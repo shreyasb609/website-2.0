@@ -26,7 +26,7 @@ type: "page"
 
 <details class="faq-item" id="faq3"><summary>What is the 100% Fit Guarantee?</summary><div class="faq-answer">If you or your child are not completely satisfied with your tutor after the first session, we will rematch you with a new instructor at no extra charge and credit your session. Your satisfaction is our priority.</div></details>
 
-<details class="faq-item" id="faq4"><summary>What academic subjects and test prep do you cover?</summary><div class="faq-answer">We cover K-12 Math (Pre-Algebra through Calculus BC), Sciences (Biology, Chemistry, Physics), Computer Science (Python, Java), Humanities, College Essays, and standardized test prep (SAT, ACT, AP Exams, PSAT, SSAT/ISEE).</div></details>
+<details class="faq-item" id="faq4"><summary>What academic subjects do you cover?</summary><div class="faq-answer">We cover K-12 Math (Pre-Algebra through Calculus BC), Sciences (Biology, Chemistry, Physics), Computer Science (Python, Java), and AP exam preparation in math, science, and computer science.</div></details>
 
 <details class="faq-item" id="faq5"><summary>How much do sessions cost?</summary><div class="faq-answer">Pricing varies depending on subject complexity, tutor experience level, and session frequency. The initial consultation is always free. Contact us for a personalized quote; we are committed to offering competitive, transparent rates.</div></details>
 

@@ -1029,3 +1029,9 @@ textarea.form-control { resize: vertical; }
 @media (max-width: 768px) {
   .google-form-embed iframe { height: 1400px; }
 }
+
+/* Keep the remaining subject and result cards balanced. */
+@media (min-width: 769px) {
+  .elevate-services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.elevate-results-grid { grid-template-columns: minmax(0, 1fr); max-width: 600px; margin-inline: auto; }
