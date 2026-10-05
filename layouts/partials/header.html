@@ -20,8 +20,8 @@
       <div class="nav-menu">
         {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
         <a href="{{ "get-tutored/" | relURL }}" class="elevate-btn elevate-btn-sm elevate-nav-cta">Get Tutored &rarr;</a>
+        <a href="{{ "join/" | relURL }}" class="elevate-btn elevate-btn-sm btn-template-transparent-primary elevate-nav-join"{{ if eq .RelPermalink ("join/" | relURL) }} aria-current="page"{{ end }}>Become a Tutor &rarr;</a>
       </div>
     </div>
   </div>
 </nav>
-

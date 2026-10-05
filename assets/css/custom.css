@@ -983,7 +983,7 @@ textarea.form-control { resize: vertical; }
 .modal { padding: 24px 0; overflow-y: auto; }
 .modal-dialog { margin-top: 0 !important; max-height: calc(100dvh - 48px); overflow-y: auto; }
 .modal-header { background: #14532D !important; }
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
   .nav-hamburger { display: flex; }
   .nav-toggle { display: block; }
   .nav-collapse { display: none; width: 100%; flex-basis: 100%; padding: 12px 0; max-height: calc(100dvh - 90px); overflow-y: auto; }
