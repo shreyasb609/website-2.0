@@ -1035,3 +1035,21 @@ textarea.form-control { resize: vertical; }
   .elevate-services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .elevate-results-grid { grid-template-columns: minmax(0, 1fr); max-width: 600px; margin-inline: auto; }
+
+/* Tutor recruitment and application layout. */
+.tutor-recruitment { padding: 64px 0; background: var(--bg-secondary); }
+.tutor-recruitment-card { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tutor-recruitment-card > div { max-width: 680px; min-width: 0; }
+.tutor-recruitment-card h2 { margin: 16px 0 12px; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.25; }
+.tutor-recruitment-card > a { flex-shrink: 0; }
+.tutor-application-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); gap: 32px; align-items: start; margin-top: 56px; }
+.tutor-application-main, .tutor-application-sidebar { min-width: 0; }
+@media (max-width: 900px) {
+  .tutor-application-layout { grid-template-columns: minmax(0, 1fr); }
+  .tutor-recruitment-card { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .tutor-application-main > .box { padding: 24px 8px; }
+  .tutor-application-main > .box > h2, .tutor-application-main > .box > p { margin-inline: 8px; }
+  .tutor-recruitment-card > a { width: 100%; }
+}

@@ -9,7 +9,7 @@ The deployment base URL is configured in `hugo.yaml`; content links use the `sit
 
 - Home, About/programs, tutoring inquiries, tutor applications, FAQ, contact, study topic previews, and portal availability page.
 - FAQ uses native HTML disclosures. Topic previews support Escape, focus return, and keyboard focus containment.
-- The student intake page embeds the Google Form in `content/get-tutored.md`, with a direct-link fallback. Set `params.formspree_action` in `hugo.yaml` to a real Formspree endpoint to enable the separate tutor application form; until configured, that page offers email contact.
+- Student intake (`content/get-tutored.md`) and tutor applications (`content/join.md`) each embed their own Google Form, with direct-link fallbacks. Manage questions, response access, and submissions in Google Forms.
 - The portal is a coming-soon page. Authentication, session tracking, and reminders require a real backend; the previous browser-only simulation did not provide those services.
 - Resources currently contain topic overviews, not downloadable PDFs.
 

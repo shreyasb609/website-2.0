@@ -41,64 +41,19 @@ type: "page"
 
 <hr>
 
-<div class="row" style="margin-top:56px;">
-<div class="col-md-7">
+<div class="tutor-application-layout" id="tutor-application">
+<div class="tutor-application-main">
 <div class="box">
-<h3 style="margin-bottom:6px;">Tutor Application Form</h3>
+<h2 style="margin-bottom:6px;">Tutor Application Form</h2>
 <p style="margin-bottom:28px;">Applications are reviewed on a rolling basis. We will be in touch within 2-3 business days.</p>
-{{< inquiry-start "apply as a tutor" >}}
-<div class="row">
-<div class="col-sm-6">
-<div class="form-group">
-<label for="name">Full Name *</label>
-<input type="text" class="form-control" id="name" name="name" placeholder="e.g. Jordan Lee" required>
+<div class="google-form-embed">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFAZZNq-piDmbI4-m-DJvtJsChdortTpwng6kf2P7cj2Hcag/viewform?embedded=true" title="Elevate Tutoring tutor application form" width="100%" height="1200">Loading tutor application form...</iframe>
 </div>
-</div>
-<div class="col-sm-6">
-<div class="form-group">
-<label for="email">Email Address *</label>
-<input type="email" class="form-control" id="email" name="email" placeholder="jordan@university.edu" required>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="form-group">
-<label for="degree">University / Degree Program *</label>
-<input type="text" class="form-control" id="degree" name="degree" placeholder="e.g. UC Davis, B.S. Computer Science" required>
-</div>
-</div>
-<div class="col-sm-6">
-<div class="form-group">
-<label for="experience">Teaching / Tutoring Experience</label>
-<select class="form-control" id="experience" name="experience">
-<option>New / Peer Mentoring</option>
-<option selected>1-2 Years</option>
-<option>3-5 Years</option>
-<option>5+ Years</option>
-</select>
-</div>
-</div>
-</div>
-<div class="form-group">
-<label for="subjects">Subjects You Can Teach *</label>
-<input type="text" class="form-control" id="subjects" name="subjects" placeholder="e.g. AP Physics, Calculus, Python, Data Science" required>
-</div>
-<div class="form-group">
-<label for="bio">Why do you want to join Elevate?</label>
-<textarea id="bio" class="form-control" name="bio" rows="4" placeholder="Briefly share your teaching approach and academic background..."></textarea>
-</div>
-<div style="margin-top:28px;">
-<button type="submit" class="btn btn-template-main btn-lg" style="width:100%;justify-content:center;">
-<i class="fas fa-user-plus"></i> Submit Application
-</button>
-<p style="text-align:center;margin-top:12px;font-size:13px;color:var(--text-muted);">We review all applications carefully and respond within 2-3 business days.</p>
-</div>
-{{< inquiry-end >}}
+<p class="google-form-fallback">Having trouble viewing the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFAZZNq-piDmbI4-m-DJvtJsChdortTpwng6kf2P7cj2Hcag/viewform" target="_blank" rel="noopener noreferrer">Open the tutor application in a new tab</a>.</p>
 </div>
 </div>
 
-<div class="col-md-4 col-md-offset-1">
+<aside class="tutor-application-sidebar">
 <h4 style="margin-bottom:20px;">Who we're looking for</h4>
 <ul style="list-style:none;padding:0;margin:0 0 32px;">
 <li style="display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--clr-border,var(--border-primary));">
@@ -129,9 +84,7 @@ type: "page"
 <li>Grow your teaching portfolio</li>
 </ul>
 </div>
+</aside>
 </div>
-
-</div>
-
 </div>
 </div>
