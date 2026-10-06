@@ -1053,3 +1053,6 @@ textarea.form-control { resize: vertical; }
   .tutor-application-main > .box > h2, .tutor-application-main > .box > p { margin-inline: 8px; }
   .tutor-recruitment-card > a { width: 100%; }
 }
+
+/* The hero now ends with its actions, without a statistics strip. */
+.elevate-hero-cta { margin-bottom: 0; }

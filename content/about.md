@@ -16,32 +16,13 @@ type: "page"
 <div class="container">
 
 <div class="row" style="margin-bottom: 72px;" id="mission">
-<div class="col-md-5">
+<div class="col-md-8 col-md-offset-2">
 <div class="divider-accent"></div>
 <h2 style="letter-spacing:-0.03em;">Our Mission</h2>
 <p style="font-size:17px; line-height:1.8;">At <strong>Elevate Tutoring</strong>, we believe every student has untapped potential. Our mission is to close educational gaps, spark genuine curiosity, and build the problem-solving skills that last a lifetime.</p>
 <p style="font-size:16px; line-height:1.8;">We do this by pairing each student with an expert educator who understands not just the subject, but the way that specific student learns best.</p>
 </div>
-<div class="col-md-6 col-md-offset-1">
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-<div class="elevate-stat-box">
-<span class="stat-number">500+</span>
-<span class="stat-label">Students Served</span>
-</div>
-<div class="elevate-stat-box">
-<span class="stat-number">95%</span>
-<span class="stat-label">Grade Improvement Rate</span>
-</div>
-<div class="elevate-stat-box">
-<span class="stat-number">24h</span>
-<span class="stat-label">Average Match Time</span>
-</div>
-<div class="elevate-stat-box">
-<span class="stat-number">4.9&#9733;</span>
-<span class="stat-label">Average Rating</span>
-</div>
-</div>
-</div>
+
 </div>
 
 <hr>
