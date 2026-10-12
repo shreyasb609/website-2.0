@@ -58,19 +58,11 @@ type: "page"
 </div>
 
 <div class="row row-flex" style="margin-top:24px;">
-<div class="col-md-6">
+<div class="col-md-12">
 <div class="box-simple">
 <div class="icon"><i class="fas fa-laptop-code"></i></div>
 <h3>STEM &amp; Coding</h3>
 <p>Python, Java, Data Structures, Object-Oriented Programming, and introductory college computer science.</p>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="box-simple">
-<div class="icon"><i class="fas fa-brain"></i></div>
-<h3>Executive Function</h3>
-<p>Time management, organized study routines, test anxiety reduction, and academic independence.</p>
 </div>
 </div>
 </div>
