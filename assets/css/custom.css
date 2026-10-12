@@ -367,36 +367,9 @@ h1, h2, h3, h4, h5, h6 {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
-.elevate-hero-stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  position: relative;
-  z-index: 1;
-}
-.elevate-stat { text-align: center; }
-.elevate-stat-num {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #FFFFFF;
-  line-height: 1;
-  margin-bottom: 6px;
-}
-.elevate-stat-label {
-  font-size: 12px;
-  color: #86EFAC;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
+
 
 /* -- 9. Services & Program Grid -------------------------------------- */
 .elevate-services {
@@ -634,93 +607,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: auto;
 }
 
-/* -- 12. Tutors Section (Aligned Buttons) --------------------------- */
-.elevate-tutors {
-  padding: 96px 0;
-  background: var(--bg-secondary);
-}
-.elevate-tutors-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-.elevate-tutor-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-primary);
-  border-radius: 12px;
-  padding: 30px 22px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  box-sizing: border-box;
-  gap: 10px;
-  transition: border-color 0.2s, transform 0.2s;
-}
-.elevate-tutor-card:hover {
-  border-color: var(--elevate-amber);
-  transform: translateY(-4px);
-}
-.elevate-tutor-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  flex-shrink: 0;
-}
-.elevate-tutor-card h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 0;
-}
-.elevate-tutor-school {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: #15803D;
-}
-@media (prefers-color-scheme: dark) {
-  .elevate-tutor-school { color: #4ADE80; }
-}
-.elevate-tutor-rating {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: #FEF3C7;
-  color: #92400E;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 3px 10px;
-  border-radius: 6px;
-  border: 1px solid #FDE68A;
-}
-@media (prefers-color-scheme: dark) {
-  .elevate-tutor-rating {
-    background: rgba(217, 119, 6, 0.2);
-    color: #FBBF24;
-    border-color: rgba(245, 158, 11, 0.3);
-  }
-}
-
-.elevate-tutor-card p {
-  font-size: 13.5px;
-  color: var(--text-secondary);
-  line-height: 1.55;
-  margin: 4px 0 12px;
-}
-
-/* CRITICAL FIX: Push Tutor Buttons to the bottom so all 4 buttons align horizontally */
-.elevate-tutor-card .elevate-btn {
-  margin-top: auto;
-  width: 100%;
-}
 
 /* -- 13. CTA Box Section --------------------------------------------- */
 .elevate-cta-section {
@@ -932,25 +818,21 @@ h1, h2, h3, h4, h5, h6 {
 /* -- 15. Responsive Breakpoints -------------------------------------- */
 @media (max-width: 1024px) {
   .elevate-services-grid { grid-template-columns: repeat(2, 1fr); }
-  .elevate-tutors-grid   { grid-template-columns: repeat(2, 1fr); }
   .elevate-results-grid  { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
   .elevate-hero { padding: calc(var(--navbar-height) + 48px) 0 48px; text-align: center; }
   .elevate-services-grid,
-  .elevate-results-grid,
-  .elevate-tutors-grid   { grid-template-columns: 1fr; }
+  .elevate-results-grid  { grid-template-columns: 1fr; }
   .elevate-why-grid      { grid-template-columns: 1fr; }
   .elevate-cta-box       { padding: 40px 24px; }
   .elevate-footer-right  { align-items: flex-start; }
-  .elevate-hero-stats    { gap: 24px; }
 }
 
 /* Shared page rhythm and accessible controls. */
-:root { --navbar-height: 76px; --text-muted: #6B635E; }
-@media (prefers-color-scheme: dark) { :root { --text-muted: #A6AFBA; } }
-body { overflow-x: visible; }
+:root { --navbar-height: 76px; }
+body { overflow-x: hidden; }
 .container { width: 100%; }
 h1, h2, h3, h4 { text-wrap: balance; }
 .page-body p + p { margin-top: 16px; }
@@ -1030,11 +912,15 @@ textarea.form-control { resize: vertical; }
   .google-form-embed iframe { height: 1400px; }
 }
 
-/* Keep the remaining subject and result cards balanced. */
-@media (min-width: 769px) {
-  .elevate-services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* Keep the service and result grids multi-column on larger screens. */
+@media (min-width: 1025px) {
+  .elevate-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .elevate-results-grid  { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; margin-inline: 0; }
 }
-.elevate-results-grid { grid-template-columns: minmax(0, 1fr); max-width: 600px; margin-inline: auto; }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .elevate-services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .elevate-results-grid  { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: none; margin-inline: 0; }
+}
 
 /* Tutor recruitment and application layout. */
 .tutor-recruitment { padding: 64px 0; background: var(--bg-secondary); }
@@ -1054,5 +940,3 @@ textarea.form-control { resize: vertical; }
   .tutor-recruitment-card > a { width: 100%; }
 }
 
-/* The hero now ends with its actions, without a statistics strip. */
-.elevate-hero-cta { margin-bottom: 0; }
